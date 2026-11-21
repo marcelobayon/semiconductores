@@ -146,7 +146,24 @@
     "privacy": "Privacidad",
     "terms": "T\u00e9rminos",
     "about": "Acerca de",
-    "research": "Investigaci\u00f3n"
+    "research": "Investigaci\u00f3n",
+    "colCatalog": "Cat\u00e1logo",
+    "colTools": "Herramientas",
+    "colLearn": "Aprende",
+    "colInitiative": "Iniciativa",
+    "lSearch": "B\u00fasqueda de componentes",
+    "lCategories": "Categor\u00edas",
+    "lManufacturers": "Fabricantes",
+    "lSuppliers": "Proveedores",
+    "lCalculators": "Calculadoras",
+    "lBom": "Analizador BOM",
+    "lApi": "API para desarrolladores",
+    "lEducation": "Educaci\u00f3n",
+    "lGuides": "Gu\u00edas",
+    "lGlossary": "Glosario",
+    "lResearch": "Investigaci\u00f3n y ecosistema",
+    "lPlatform": "Plataforma",
+    "tagline": "Comercio e inteligencia de semiconductores, biling\u00fce."
   },
   "platform": {
     "kick": "EL PISO AUTOMATIZADO \u00b7 3D",
@@ -359,5 +376,78 @@
     "ctaText": "Si eres una universidad, laboratorio, agencia o empresa que explora el ecosistema regional de semiconductores, nos gustar\u00eda saber de ti.",
     "ctaBtn": "Iniciar una conversaci\u00f3n",
     "visit": "Visitar"
+  },
+  "manufacturers": {
+    "title": "Fabricantes",
+    "intro": "Fabricantes de componentes representados en nuestro cat\u00e1logo. Las especificaciones provienen de la hoja de datos de cada fabricante.",
+    "inCatalog": "En nuestro cat\u00e1logo",
+    "part": "pieza",
+    "parts": "piezas",
+    "backAll": "Todos los fabricantes",
+    "profileNote": "Informaci\u00f3n p\u00fablica sobre el fabricante. No estamos afiliados ni respaldados por esta empresa."
+  },
+  "suppliers": {
+    "title": "Abastecimiento y distribuci\u00f3n",
+    "intro": "Ayudamos a ingenieros y compradores a conseguir componentes, y estamos construyendo una red regional de proveedores y distribuidores. No mostramos ning\u00fan proveedor con el que no trabajemos de verdad.",
+    "buyersH": "\u00bfNecesitas conseguir componentes?",
+    "buyersText": "Env\u00eda una lista de materiales o una solicitud de abastecimiento y te ayudamos a encontrar piezas y a gestionar una cotizaci\u00f3n.",
+    "buyersCta": "Solicitar abastecimiento",
+    "suppliersH": "\u00bfEres proveedor o distribuidor?",
+    "suppliersText": "Si distribuyes componentes aut\u00e9nticos y trazables en Am\u00e9rica Latina, nos gustar\u00eda hablar.",
+    "suppliersCta": "Ser socio",
+    "note": "Nunca mostramos autorizaciones inventadas, riesgo de falsificaci\u00f3n ni socios que no hayamos verificado. Los listados de proveedores incluir\u00e1n detalles claros de abastecimiento y verificaci\u00f3n a medida que crezca la red."
+  },
+  "about": {
+    "title": "Acerca de la iniciativa",
+    "intro": "Semiconductores.net es una plataforma biling\u00fce de comercio e inteligencia de semiconductores, y la cara p\u00fablica de una iniciativa a largo plazo, centrada en la investigaci\u00f3n, para ayudar a construir capacidades de semiconductores originadas en Am\u00e9rica Latina.",
+    "whatH": "Qu\u00e9 es",
+    "whatText": "Un cat\u00e1logo de componentes con b\u00fasqueda, calculadoras de ingenier\u00eda, educaci\u00f3n, un analizador de BOM gratuito y una API de solo lectura \u2014 adem\u00e1s de una p\u00e1gina que sigue el ecosistema de investigaci\u00f3n regional. Todo es biling\u00fce (espa\u00f1ol e ingl\u00e9s).",
+    "ambitionH": "La ambici\u00f3n a largo plazo",
+    "ambitionText": "Comenzando por Colombia y Per\u00fa, la iniciativa busca desarrollar capacidades en la cadena de valor por etapas \u2014 investigaci\u00f3n, dise\u00f1o, prototipado, pruebas y manufactura selectiva \u2014 ancladas en investigaci\u00f3n computacional propia (SECD).",
+    "ambitionCta": "Investigaci\u00f3n y ecosistema",
+    "isntH": "Qu\u00e9 no es",
+    "isntText": "Esto no es una f\u00e1brica, un chip a la venta, ni una afirmaci\u00f3n de manufactura validada. Es una iniciativa temprana y por etapas. No publicamos socios, respaldos ni capacidades que no tengamos.",
+    "ctaH": "\u00bfQuieres participar?",
+    "ctaText": "Damos la bienvenida a socios de investigaci\u00f3n, proveedores, universidades y contactos de la industria.",
+    "ctaBtn": "Iniciar una conversaci\u00f3n"
+  },
+  "privacy": {
+    "title": "Pol\u00edtica de Privacidad",
+    "updated": "\u00daltima actualizaci\u00f3n: noviembre de 2026",
+    "intro": "Esta es una pol\u00edtica de privacidad general para un sitio en etapa temprana y no constituye asesor\u00eda legal. Describe c\u00f3mo Semiconductores.net maneja la informaci\u00f3n limitada que recopila.",
+    "sections": [
+      {
+        "h": "Qu\u00e9 recopilamos",
+        "p": "Cuando env\u00edas un formulario \u2014 contacto, solicitud de abastecimiento, postulaci\u00f3n de proveedor o lista de espera de un curso \u2014 recopilamos lo que proporcionas, normalmente tu nombre, correo y tu mensaje o solicitud. No pedimos dise\u00f1os confidenciales, datos controlados por exportaci\u00f3n ni secretos comerciales a trav\u00e9s de formularios p\u00fablicos."
+      },
+      {
+        "h": "Anal\u00edtica",
+        "p": "Usamos Google Analytics 4 para entender el uso agregado. La anal\u00edtica se carga solo despu\u00e9s de que la aceptes en el banner de consentimiento, y enviamos \u00fanicamente eventos no identificables (como vistas de p\u00e1gina e interacciones) \u2014 nunca el contenido de tus formularios, tu correo ni el texto de tus mensajes."
+      },
+      {
+        "h": "Cookies y consentimiento",
+        "p": "El almacenamiento de anal\u00edtica no esencial permanece denegado hasta que des tu consentimiento. Puedes rechazarlo y el sitio funciona sin anal\u00edtica."
+      },
+      {
+        "h": "Formularios y destino de los datos",
+        "p": "Los env\u00edos de formularios se procesan mediante el manejo de formularios de nuestro proveedor de hosting (Netlify Forms) para poder responderte. Usamos tu informaci\u00f3n solo para responder y brindar el servicio que solicitaste."
+      },
+      {
+        "h": "Enlaces de afiliados",
+        "p": "Algunos enlaces salientes pueden ser de afiliados (consulta nuestra Divulgaci\u00f3n de Afiliados). Los programas de afiliados pueden establecer sus propias cookies al hacer clic; se rigen por la pol\u00edtica del destino, no por la nuestra."
+      },
+      {
+        "h": "Retenci\u00f3n y tus opciones",
+        "p": "Conservamos los env\u00edos de formularios solo el tiempo necesario para responder y mantener la relaci\u00f3n. Para saber qu\u00e9 tenemos sobre ti, o para solicitar su eliminaci\u00f3n, cont\u00e1ctanos a trav\u00e9s del sitio."
+      },
+      {
+        "h": "Cambios",
+        "p": "Podemos actualizar esta pol\u00edtica a medida que la plataforma crezca. Los cambios importantes aparecer\u00e1n aqu\u00ed con una nueva fecha."
+      },
+      {
+        "h": "Contacto",
+        "p": "Para preguntas de privacidad, escr\u00edbenos mediante el formulario de contacto o de abastecimiento de este sitio."
+      }
+    ]
   }
 }
