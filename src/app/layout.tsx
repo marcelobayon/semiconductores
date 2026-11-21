@@ -5,6 +5,7 @@ import "../styles/features/education.css";
 import "../styles/features/bom.css";
 import "../styles/features/api.css";
 import "../styles/features/research.css";
+import "../styles/features/manufacturers.css";
 import type { Metadata } from "next";
 import { siteUrl } from "@/lib/seo";
 
