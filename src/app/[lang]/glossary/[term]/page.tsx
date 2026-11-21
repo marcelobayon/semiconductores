@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { getDictionary, isLocale, locales, type Locale } from "@/lib/i18n";
 import { buildMetadata } from "@/lib/seo";
 import { glossary, getTerm } from "@/lib/glossary";
+import PageView from "@/components/PageView";
 
 export function generateStaticParams() {
   const out: { lang: string; term: string }[] = [];
@@ -26,6 +27,7 @@ export default function Page({ params }: { params: { lang: string; term: string 
   const e = getDictionary(lang).education;
   return (
     <main className="detailwrap">
+      <PageView event="glossary_view" params={{ term: t.slug, business_unit: "education" }} />
       <div className="crumb"><Link href={`/${lang}/glossary`}>{e.allTerms}</Link></div>
       <h1 style={{ fontFamily: "var(--sans)" }}>{t.term}</h1>
       <p className="detaildesc">{t.definition[lang]}</p>

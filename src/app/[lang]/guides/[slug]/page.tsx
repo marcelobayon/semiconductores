@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { getDictionary, isLocale, locales, type Locale } from "@/lib/i18n";
 import { buildMetadata } from "@/lib/seo";
 import { guides, getGuide } from "@/lib/guides";
+import PageView from "@/components/PageView";
 
 export function generateStaticParams() {
   const out: { lang: string; slug: string }[] = [];
@@ -28,6 +29,7 @@ export default function Page({ params }: { params: { lang: string; slug: string 
   return (
     <main className="detailwrap">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld) }} />
+      <PageView event="guide_view" params={{ guide: g.slug, business_unit: "education" }} />
       <div className="crumb"><Link href={`/${lang}/guides`}>{e.allGuides}</Link></div>
       <h1 style={{ fontFamily: "var(--sans)", letterSpacing: "-.5px" }}>{g.title[lang]}</h1>
       <p className="detailsub">{e.editor}: {g.editor} {"·"} {e.published}: {g.published}</p>
