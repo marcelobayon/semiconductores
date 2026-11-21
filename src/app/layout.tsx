@@ -1,4 +1,10 @@
 import "./globals.css";
+import "../styles/features/calculators.css";
+import "../styles/features/component.css";
+import "../styles/features/education.css";
+import "../styles/features/bom.css";
+import "../styles/features/api.css";
+import "../styles/features/research.css";
 import type { Metadata } from "next";
 import { siteUrl } from "@/lib/seo";
 

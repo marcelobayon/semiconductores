@@ -1,0 +1,32 @@
+[
+  {
+    "n": "01",
+    "t": "Descubrir",
+    "d": "Buscar partes y proveedores"
+  },
+  {
+    "n": "02",
+    "t": "Comparar",
+    "d": "Referencias y alternativas"
+  },
+  {
+    "n": "03",
+    "t": "Calcular",
+    "d": "Herramientas validadas"
+  },
+  {
+    "n": "04",
+    "t": "Enriquecer",
+    "d": "An\u00e1lisis de BOM y brechas"
+  },
+  {
+    "n": "05",
+    "t": "Abastecer",
+    "d": "RFQ y proveedores verificados"
+  },
+  {
+    "n": "06",
+    "t": "Monitorear",
+    "d": "Ciclo de vida y disponibilidad"
+  }
+]

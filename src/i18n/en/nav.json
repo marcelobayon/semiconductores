@@ -1,0 +1,11 @@
+{
+  "marketplace": "Marketplace",
+  "components": "Components",
+  "suppliers": "Suppliers",
+  "tools": "Tools & Calculators",
+  "bom": "BOM Analyzer",
+  "education": "Education",
+  "research": "Research",
+  "api": "API / Developers",
+  "sourcing": "Request sourcing"
+}

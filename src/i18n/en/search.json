@@ -1,0 +1,6 @@
+{
+  "title": "Component Search",
+  "intro": "Search the curated component catalog. Each result is an owned engineering record \u2014 specs entered from the manufacturer datasheet, with provenance.",
+  "placeholder": "Search MPN, manufacturer, or category",
+  "none": "No match. The catalog is curated and growing."
+}

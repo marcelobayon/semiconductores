@@ -1,0 +1,50 @@
+[
+  {
+    "route": "/marketplace",
+    "t": "Mercado",
+    "d": "Busca el directorio de componentes y proveedores.",
+    "accent": ""
+  },
+  {
+    "route": "/manufacturers",
+    "t": "Fabricantes",
+    "d": "Fundiciones y perfiles de fabricantes.",
+    "accent": ""
+  },
+  {
+    "route": "/suppliers",
+    "t": "Proveedores",
+    "d": "Distribuidores verificados y log\u00edstica.",
+    "accent": "amber"
+  },
+  {
+    "route": "/compare",
+    "t": "Comparar",
+    "d": "Referencias cruzadas y alternativas.",
+    "accent": ""
+  },
+  {
+    "route": "/calculators",
+    "t": "Herramientas",
+    "d": "Potencia, t\u00e9rmica y temporizaci\u00f3n validadas.",
+    "accent": ""
+  },
+  {
+    "route": "/education",
+    "t": "Educaci\u00f3n",
+    "d": "Cursos, gu\u00edas y glosario curados.",
+    "accent": ""
+  },
+  {
+    "route": "/research",
+    "t": "Investigaci\u00f3n",
+    "d": "Investigaci\u00f3n de defectos EUV y SECD.",
+    "accent": ""
+  },
+  {
+    "route": "/api",
+    "t": "API / Desarrolladores",
+    "d": "Datos legibles por m\u00e1quina para agentes.",
+    "accent": "amber"
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "disc": "Demonstration data for layout review. No live inventory, pricing, lead times, or supplier authorization is shown. Live component values will carry source attribution and last-checked timestamps.",
+  "affiliate": "Affiliate disclosure",
+  "privacy": "Privacy",
+  "terms": "Terms",
+  "about": "About",
+  "research": "Research",
+  "colCatalog": "Catalog",
+  "colTools": "Tools",
+  "colLearn": "Learn",
+  "colInitiative": "Initiative",
+  "lSearch": "Component search",
+  "lCategories": "Categories",
+  "lCalculators": "Calculators",
+  "lBom": "BOM Analyzer",
+  "lApi": "Developer API",
+  "lEducation": "Education",
+  "lGuides": "Guides",
+  "lGlossary": "Glossary",
+  "lResearch": "Research & ecosystem",
+  "lPlatform": "Platform",
+  "tagline": "Bilingual semiconductor commerce & intelligence."
+}

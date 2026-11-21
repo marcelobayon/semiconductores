@@ -1,0 +1,32 @@
+[
+  {
+    "n": "01",
+    "t": "Discover",
+    "d": "Search parts & suppliers"
+  },
+  {
+    "n": "02",
+    "t": "Compare",
+    "d": "Cross-reference & alternatives"
+  },
+  {
+    "n": "03",
+    "t": "Calculate",
+    "d": "Validated engineering tools"
+  },
+  {
+    "n": "04",
+    "t": "Enrich",
+    "d": "BOM analysis & gaps"
+  },
+  {
+    "n": "05",
+    "t": "Source",
+    "d": "RFQs & verified suppliers"
+  },
+  {
+    "n": "06",
+    "t": "Monitor",
+    "d": "Lifecycle & availability"
+  }
+]

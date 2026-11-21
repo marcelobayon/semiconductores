@@ -1,0 +1,13 @@
+{
+  "title": "Tools & Calculators",
+  "intro": "Validated engineering calculators. Each shows its formula, assumptions, a worked example, and its limitations.",
+  "inputs": "Inputs",
+  "result": "Result",
+  "formula": "Formula",
+  "assumptions": "Assumptions",
+  "worked": "Worked example",
+  "limitations": "Limitations",
+  "purpose": "Purpose",
+  "all": "All calculators",
+  "verify": "Educational tool. Independently verify against the datasheet before relying on the result."
+}
