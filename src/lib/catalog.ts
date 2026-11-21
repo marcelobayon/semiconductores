@@ -150,6 +150,19 @@ export function getPart(slug: string): CatalogPart | undefined {
   return catalog.find((p) => p.slug === s);
 }
 
+export function normalizeMpn(s: string): string {
+  return s.toUpperCase().replace(/\s+/g, "");
+}
+
+/** Match an entered part number against catalog MPNs and their listed alternatives. */
+export function findByMpn(mpn: string): CatalogPart | undefined {
+  const n = normalizeMpn(mpn);
+  if (!n) return undefined;
+  return catalog.find(
+    (p) => normalizeMpn(p.mpn) === n || p.alternatives.some((a) => normalizeMpn(a) === n),
+  );
+}
+
 export function octopartUrl(mpn: string): string {
   return "https://octopart.com/search?q=" + encodeURIComponent(mpn);
 }

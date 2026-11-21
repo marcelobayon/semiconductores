@@ -1,0 +1,13 @@
+MPN,Qty,Reference,Description
+STM32F103C8T6,2,U1,"MCU, ARM Cortex-M3, 72 MHz"
+ATmega328P-PU,1,U2,8-bit AVR MCU
+NE555P,3,U3,Precision timer
+LM358P,2,U4,Dual op-amp
+ESP32-WROOM-32E,1,U5,"Wi-Fi + BT module"
+1N4148,20,"D1-D20",Switching diode
+IRLZ44N,4,Q1,Logic-level N-MOSFET
+FT232RL,1,U6,USB-to-UART
+GRM188R71C104KA01D,50,C1,0.1uF MLCC 0603
+RANDOMPART-9999,5,U7,Not in our catalog (demo)
+OBSOLETE-IC-001,1,U8,Unknown part (demo)
+XYZ-CONN-12,10,J1,Unknown connector (demo)
