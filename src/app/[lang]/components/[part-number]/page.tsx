@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { getDictionary, isLocale, locales, type Locale } from "@/lib/i18n";
 import { buildMetadata } from "@/lib/seo";
 import { catalog, getPart, octopartUrl } from "@/lib/catalog";
+import WhereToBuy from "@/components/WhereToBuy";
 
 export function generateStaticParams() {
   const out: { lang: string; "part-number": string }[] = [];
@@ -49,6 +50,8 @@ export default function Page({ params }: { params: { lang: string; "part-number"
       <div className="nopricing">{c.noPricing}</div>
       <a className="extlink" href={octopartUrl(part.mpn)} target="_blank" rel="noopener noreferrer nofollow">{c.findOn} {"↗"}</a>
       <div className="provbox">{part.provenance[lang]}<br /><b>{c.lastChecked}:</b> {part.lastChecked}</div>
+
+      <WhereToBuy locale={lang} e={d.education} />
 
       <section style={{ marginTop: 20 }}>
         <h3 className="sec">{c.altsH}</h3>
