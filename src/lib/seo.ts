@@ -20,6 +20,10 @@ export function buildMetadata(opts: {
   for (const l of locales) languages[l] = `${siteUrl}/${l}${path}`;
   languages["x-default"] = `${siteUrl}/en${path}`;
 
+  // Locale-specific social preview: Spanish pages get the Spanish OG image.
+  // Read per-URL by the scraper, so sharing /es adds no friction.
+  const ogImage = opts.locale === "es" ? "/og-es.png" : "/og.png";
+
   return {
     title: opts.title,
     description: opts.description,
@@ -32,13 +36,13 @@ export function buildMetadata(opts: {
       siteName: "Semiconductores.net",
       locale: opts.locale === "es" ? "es_ES" : "en_US",
       type: "website",
-      images: [{ url: "/og.png", width: 1200, height: 630, alt: "Semiconductores.net" }],
+      images: [{ url: ogImage, width: 1200, height: 630, alt: "Semiconductores.net" }],
     },
     twitter: {
       card: "summary_large_image",
       title: opts.title,
       description: opts.description,
-      images: ["/og.png"],
+      images: [ogImage],
     },
   };
 }
