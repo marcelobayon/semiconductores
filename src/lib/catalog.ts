@@ -13,6 +13,7 @@ export interface CatalogPart {
   mpn: string;
   slug: string;
   manufacturer: string;
+  manufacturerSlug?: string;
   category: L;
   categorySlug: string;
   package: string;
@@ -32,7 +33,7 @@ const CHECKED = "2026-11-20";
 
 export const catalog: CatalogPart[] = [
   {
-    mpn: "STM32F103C8T6", slug: "stm32f103c8t6", manufacturer: "STMicroelectronics",
+    mpn: "STM32F103C8T6", slug: "stm32f103c8t6", manufacturer: "STMicroelectronics", manufacturerSlug: "stmicroelectronics",
     category: { en: "Microcontrollers", es: "Microcontroladores" }, categorySlug: "microcontrollers",
     package: "LQFP-48",
     description: { en: "ARM Cortex-M3 32-bit MCU, 72 MHz, 64 KB Flash, 20 KB SRAM.", es: "MCU ARM Cortex-M3 de 32 bits, 72 MHz, 64 KB Flash, 20 KB SRAM." },
@@ -44,7 +45,7 @@ export const catalog: CatalogPart[] = [
     alternatives: [], provenance: PROV, lastChecked: CHECKED,
   },
   {
-    mpn: "ATmega328P-PU", slug: "atmega328p-pu", manufacturer: "Microchip (Atmel)",
+    mpn: "ATmega328P-PU", slug: "atmega328p-pu", manufacturer: "Microchip (Atmel)", manufacturerSlug: "microchip",
     category: { en: "Microcontrollers", es: "Microcontroladores" }, categorySlug: "microcontrollers",
     package: "PDIP-28",
     description: { en: "8-bit AVR MCU, 20 MHz, 32 KB Flash, 2 KB SRAM, 1 KB EEPROM.", es: "MCU AVR de 8 bits, 20 MHz, 32 KB Flash, 2 KB SRAM, 1 KB EEPROM." },
@@ -56,7 +57,7 @@ export const catalog: CatalogPart[] = [
     alternatives: [], provenance: PROV, lastChecked: CHECKED,
   },
   {
-    mpn: "NE555P", slug: "ne555p", manufacturer: "Texas Instruments",
+    mpn: "NE555P", slug: "ne555p", manufacturer: "Texas Instruments", manufacturerSlug: "texas-instruments",
     category: { en: "Timers & Oscillators", es: "Temporizadores y Osciladores" }, categorySlug: "timers",
     package: "PDIP-8",
     description: { en: "Precision timer / pulse generator (single).", es: "Temporizador de precisión / generador de pulsos (simple)." },
@@ -67,7 +68,7 @@ export const catalog: CatalogPart[] = [
     alternatives: [], provenance: PROV, lastChecked: CHECKED,
   },
   {
-    mpn: "LM358P", slug: "lm358p", manufacturer: "Texas Instruments",
+    mpn: "LM358P", slug: "lm358p", manufacturer: "Texas Instruments", manufacturerSlug: "texas-instruments",
     category: { en: "Amplifiers", es: "Amplificadores" }, categorySlug: "amplifiers",
     package: "PDIP-8",
     description: { en: "Dual low-power operational amplifier.", es: "Amplificador operacional doble de bajo consumo." },
@@ -78,7 +79,7 @@ export const catalog: CatalogPart[] = [
     alternatives: [], provenance: PROV, lastChecked: CHECKED,
   },
   {
-    mpn: "TPS54560DDAR", slug: "tps54560ddar", manufacturer: "Texas Instruments",
+    mpn: "TPS54560DDAR", slug: "tps54560ddar", manufacturer: "Texas Instruments", manufacturerSlug: "texas-instruments",
     category: { en: "Power Management", es: "Gestión de Potencia" }, categorySlug: "power-management",
     package: "HSOIC-8 (PowerPAD)",
     description: { en: "4.5–60 V input, 5 A step-down (buck) DC/DC converter.", es: "Convertidor reductor (buck) DC/DC, entrada 4.5–60 V, 5 A." },
@@ -89,7 +90,7 @@ export const catalog: CatalogPart[] = [
     alternatives: [], provenance: PROV, lastChecked: CHECKED,
   },
   {
-    mpn: "ESP32-WROOM-32E", slug: "esp32-wroom-32e", manufacturer: "Espressif",
+    mpn: "ESP32-WROOM-32E", slug: "esp32-wroom-32e", manufacturer: "Espressif", manufacturerSlug: "espressif",
     category: { en: "Wireless Modules", es: "Módulos Inalámbricos" }, categorySlug: "wireless-modules",
     package: "SMD module",
     description: { en: "Wi-Fi 802.11 b/g/n + Bluetooth module, dual-core Xtensa LX6.", es: "Módulo Wi-Fi 802.11 b/g/n + Bluetooth, doble núcleo Xtensa LX6." },
@@ -111,7 +112,7 @@ export const catalog: CatalogPart[] = [
     alternatives: [], provenance: PROV, lastChecked: CHECKED,
   },
   {
-    mpn: "IRLZ44N", slug: "irlz44n", manufacturer: "Infineon",
+    mpn: "IRLZ44N", slug: "irlz44n", manufacturer: "Infineon", manufacturerSlug: "infineon",
     category: { en: "MOSFETs", es: "MOSFETs" }, categorySlug: "mosfets",
     package: "TO-220",
     description: { en: "Logic-level N-channel MOSFET, 55 V, 47 A.", es: "MOSFET canal-N nivel lógico, 55 V, 47 A." },
@@ -122,7 +123,7 @@ export const catalog: CatalogPart[] = [
     alternatives: [], provenance: PROV, lastChecked: CHECKED,
   },
   {
-    mpn: "GRM188R71C104KA01D", slug: "grm188r71c104ka01d", manufacturer: "Murata",
+    mpn: "GRM188R71C104KA01D", slug: "grm188r71c104ka01d", manufacturer: "Murata", manufacturerSlug: "murata",
     category: { en: "Capacitors", es: "Capacitores" }, categorySlug: "capacitors",
     package: "0603 (1608 metric)",
     description: { en: "0.1 µF, 16 V, X7R MLCC ceramic capacitor, ±10%.", es: "Capacitor cerámico MLCC 0.1 µF, 16 V, X7R, ±10%." },
@@ -133,7 +134,7 @@ export const catalog: CatalogPart[] = [
     alternatives: [], provenance: PROV, lastChecked: CHECKED,
   },
   {
-    mpn: "FT232RL", slug: "ft232rl", manufacturer: "FTDI",
+    mpn: "FT232RL", slug: "ft232rl", manufacturer: "FTDI", manufacturerSlug: "ftdi",
     category: { en: "Interface ICs", es: "Circuitos de Interfaz" }, categorySlug: "interface",
     package: "SSOP-28",
     description: { en: "USB 2.0 full-speed to UART bridge.", es: "Puente USB 2.0 full-speed a UART." },

@@ -238,5 +238,21 @@
     "intro": "Browse components by category.",
     "inCategory": "Components in",
     "all": "All categories"
+  },
+  "manufacturer": {
+    "title": "Manufacturers",
+    "intro": "Foundries and manufacturers in the catalog.",
+    "country": "Headquarters",
+    "website": "Official site",
+    "parts": "Parts in catalog",
+    "all": "All manufacturers",
+    "profile": "Manufacturer"
+  },
+  "consent": {
+    "title": "Privacy",
+    "text": "We use privacy-first analytics to understand usage. No ads, and we never sell your data.",
+    "accept": "Accept",
+    "decline": "Decline",
+    "privacy": "Privacy policy"
   }
 }

@@ -238,5 +238,21 @@
     "intro": "Explora componentes por categor\u00eda.",
     "inCategory": "Componentes en",
     "all": "Todas las categor\u00edas"
+  },
+  "manufacturer": {
+    "title": "Fabricantes",
+    "intro": "Fundiciones y fabricantes en el cat\u00e1logo.",
+    "country": "Sede",
+    "website": "Sitio oficial",
+    "parts": "Partes en el cat\u00e1logo",
+    "all": "Todos los fabricantes",
+    "profile": "Fabricante"
+  },
+  "consent": {
+    "title": "Privacidad",
+    "text": "Usamos anal\u00edtica respetuosa con la privacidad para entender el uso. Sin anuncios, y nunca vendemos tus datos.",
+    "accept": "Aceptar",
+    "decline": "Rechazar",
+    "privacy": "Pol\u00edtica de privacidad"
   }
 }
