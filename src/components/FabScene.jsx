@@ -31,6 +31,8 @@ const LABELS = {
   ],
 };
 
+const meshAt = (geo, mat, x, y, z) => { const m = new THREE.Mesh(geo, mat); m.position.set(x, y, z); return m; };
+
 export default function FabScene({ locale }) {
   const hostRef = useRef(null);
 
@@ -107,7 +109,7 @@ export default function FabScene({ locale }) {
 
     // wafer processing bay
     const wbX = -6.5, wbZ = -3.2;
-    fab.add(Object.assign(new THREE.Mesh(new THREE.BoxGeometry(2.4, 2.6, 2.0), M.alu), { position: new THREE.Vector3(wbX, 1.3, wbZ) }));
+    fab.add(meshAt(new THREE.BoxGeometry(2.4, 2.6, 2.0), M.alu, wbX, 1.3, wbZ));
     const win = new THREE.Mesh(new THREE.BoxGeometry(1.4, 1.0, 0.06), M.cyan.clone()); win.material.emissiveIntensity = 1.0; win.position.set(wbX, 1.5, wbZ + 1.02); fab.add(win);
     const wafer = new THREE.Mesh(new THREE.CylinderGeometry(0.95, 0.95, 0.05, 40), new THREE.MeshStandardMaterial({ color: 0x0a2a30, metalness: 0.6, roughness: 0.2, emissive: 0x00c8d8, emissiveIntensity: 0.6 }));
     wafer.position.set(wbX, 3.0, wbZ); fab.add(wafer);
@@ -115,15 +117,15 @@ export default function FabScene({ locale }) {
 
     // robotic arm
     const bX = -3.2, bZ = 1.2;
-    fab.add(Object.assign(new THREE.Mesh(new THREE.CylinderGeometry(0.55, 0.7, 0.5, 24), M.dark), { position: new THREE.Vector3(bX, 0.25, bZ) }));
+    fab.add(meshAt(new THREE.CylinderGeometry(0.55, 0.7, 0.5, 24), M.dark, bX, 0.25, bZ));
     const yaw = new THREE.Group(); yaw.position.set(bX, 0.5, bZ); fab.add(yaw);
     const sh = new THREE.Mesh(new THREE.BoxGeometry(0.7, 0.6, 0.8), M.amber.clone()); sh.material.emissiveIntensity = 0.5; sh.position.y = 0.3; yaw.add(sh);
     const j1 = new THREE.Group(); j1.position.y = 0.5; yaw.add(j1);
-    j1.add(Object.assign(new THREE.Mesh(new THREE.CylinderGeometry(0.17, 0.2, 2.2, 16), M.alu), { position: new THREE.Vector3(0, 1.1, 0) }));
+    j1.add(meshAt(new THREE.CylinderGeometry(0.17, 0.2, 2.2, 16), M.alu, 0, 1.1, 0));
     const j2 = new THREE.Group(); j2.position.y = 2.2; j1.add(j2);
-    j2.add(Object.assign(new THREE.Mesh(new THREE.CylinderGeometry(0.14, 0.17, 1.8, 16), M.alu), { position: new THREE.Vector3(0, 0.9, 0) }));
+    j2.add(meshAt(new THREE.CylinderGeometry(0.14, 0.17, 1.8, 16), M.alu, 0, 0.9, 0));
     const j3 = new THREE.Group(); j3.position.y = 1.8; j2.add(j3);
-    j3.add(Object.assign(new THREE.Mesh(new THREE.CylinderGeometry(0.12, 0.12, 0.4, 12), M.dark), { position: new THREE.Vector3(0, 0.2, 0) }));
+    j3.add(meshAt(new THREE.CylinderGeometry(0.12, 0.12, 0.4, 12), M.dark, 0, 0.2, 0));
     const fingerL = new THREE.Mesh(new THREE.BoxGeometry(0.08, 0.32, 0.14), M.cyan.clone()); fingerL.material.emissiveIntensity = 0.7; fingerL.position.set(0, 0.5, 0.12);
     const fingerR = fingerL.clone(); fingerR.position.z = -0.12; j3.add(fingerL, fingerR);
     const KF = [
@@ -143,7 +145,7 @@ export default function FabScene({ locale }) {
     });
 
     // conveyor + instanced reels
-    fab.add(Object.assign(new THREE.Mesh(new THREE.BoxGeometry(9, 0.3, 1.2), M.dark), { position: new THREE.Vector3(-2.5, 0.75, 2.9) }));
+    fab.add(meshAt(new THREE.BoxGeometry(9, 0.3, 1.2), M.dark, -2.5, 0.75, 2.9));
     const reelGeo = new THREE.CylinderGeometry(0.34, 0.34, 0.5, 20);
     const reels = new THREE.InstancedMesh(reelGeo, M.reel, 7); fab.add(reels);
     const dummy = new THREE.Object3D();
@@ -157,7 +159,7 @@ export default function FabScene({ locale }) {
     });
 
     // storage bins
-    fab.add(Object.assign(new THREE.Mesh(new THREE.BoxGeometry(3.4, 0.2, 2.6), M.dark), { position: new THREE.Vector3(-6, 0.1, -1.6) }));
+    fab.add(meshAt(new THREE.BoxGeometry(3.4, 0.2, 2.6), M.dark, -6, 0.1, -1.6));
     const bins = new THREE.InstancedMesh(new THREE.BoxGeometry(0.95, 0.85, 0.95), M.alu, 6);
     let n = 0;
     for (let cc = 0; cc < 3; cc++) for (let rr = 0; rr < 2; rr++) { dummy.position.set(-7.1 + cc * 1.1, 0.63, -2.3 + rr * 1.3); dummy.rotation.set(0, 0, 0); dummy.updateMatrix(); bins.setMatrixAt(n++, dummy.matrix); }
@@ -165,7 +167,7 @@ export default function FabScene({ locale }) {
 
     // inspection station
     const iX = 3.5, iZ = -1.8;
-    fab.add(Object.assign(new THREE.Mesh(new THREE.BoxGeometry(2.4, 0.2, 1.6), M.dark), { position: new THREE.Vector3(iX, 0.1, iZ) }));
+    fab.add(meshAt(new THREE.BoxGeometry(2.4, 0.2, 1.6), M.dark, iX, 0.1, iZ));
     for (const dx of [-0.5, 0.5]) { const top = new THREE.Mesh(new THREE.BoxGeometry(0.5, 0.16, 0.5), M.cyan.clone()); top.material.emissiveIntensity = 0.9; top.position.set(iX + dx, 0.3, iZ); fab.add(top); }
     const bar = new THREE.Mesh(new THREE.BoxGeometry(0.1, 0.1, 1.4), M.cyan.clone()); bar.material.emissiveIntensity = 1.3; bar.position.set(iX, 1.85, iZ); fab.add(bar);
     updaters.push((t) => { bar.position.x = iX + Math.sin(t * 1.8) * 0.9; });
@@ -175,9 +177,9 @@ export default function FabScene({ locale }) {
     const pad = new THREE.Mesh(new THREE.PlaneGeometry(2.6, 2.2), new THREE.MeshStandardMaterial({ color: 0x2a2006, emissive: 0xffb800, emissiveIntensity: 0.6, roughness: 0.6 }));
     pad.rotation.x = -Math.PI / 2; pad.position.set(pX, 0.06, pZ); fab.add(pad);
     const agv = new THREE.Group();
-    agv.add(Object.assign(new THREE.Mesh(new THREE.BoxGeometry(1.5, 0.45, 0.95), M.dark), { position: new THREE.Vector3(0, 0.3, 0) }));
+    agv.add(meshAt(new THREE.BoxGeometry(1.5, 0.45, 0.95), M.dark, 0, 0.3, 0));
     const stripe = new THREE.Mesh(new THREE.BoxGeometry(1.52, 0.1, 0.97), M.amber.clone()); stripe.material.emissiveIntensity = 1.0; stripe.position.y = 0.42; agv.add(stripe);
-    agv.add(Object.assign(new THREE.Mesh(new THREE.BoxGeometry(0.95, 0.5, 0.75), M.alu), { position: new THREE.Vector3(0, 0.78, 0) }));
+    agv.add(meshAt(new THREE.BoxGeometry(0.95, 0.5, 0.75), M.alu, 0, 0.78, 0));
     fab.add(agv);
     const A = new THREE.Vector3(1.0, 0, 3.0), B = new THREE.Vector3(pX - 0.2, 0, pZ);
     let agvState = "BAY-A";
