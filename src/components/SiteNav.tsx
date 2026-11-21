@@ -4,7 +4,7 @@ import type { Locale, Dictionary } from "@/lib/i18n";
 import { getDictionary } from "@/lib/i18n";
 
 const ITEMS: { key: keyof Dictionary["nav"]; route: string }[] = [
-  { key: "marketplace", route: "/marketplace" },
+  { key: "compare", route: "/compare" },
   { key: "components", route: "/search" },
   { key: "suppliers", route: "/suppliers" },
   { key: "tools", route: "/calculators" },
