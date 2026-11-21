@@ -1,0 +1,19 @@
+# Netlify deployment config for Semiconductores.net (Next.js)
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+# Official Next.js runtime on Netlify (SSR, route handlers, image optimization).
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Secrets scanning: NEXT_PUBLIC_GA_ID is a public analytics identifier, not a secret.
+[build.environment.SECRETS_SCAN_OMIT_KEYS]
+  # (configure in the Netlify UI if the secrets scanner flags NEXT_PUBLIC_GA_ID)
+
+# Production context: set NEXT_PUBLIC_GA_ID and NEXT_PUBLIC_SITE_URL in the
+# Netlify UI under Site settings -> Environment variables, scoped to "Production".
+# Leave GA unset for "Deploy previews" and "Branch deploys".
