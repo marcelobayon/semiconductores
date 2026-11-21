@@ -310,5 +310,27 @@
     "ctaTitle": "Need a real quote?",
     "ctaText": "Send your requirements to our sourcing team for a quote. The free analyzer never sends your BOM \u2014 you choose what to share.",
     "ctaBtn": "Request sourcing"
+  },
+  "apiDocs": {
+    "title": "API for developers & agents",
+    "intro": "A versioned, read-only JSON API over our owned component catalog. Built for engineers and AI agents: stable URLs, cacheable responses, no key required during the beta.",
+    "baseLabel": "Base URL",
+    "endpointsH": "Endpoints",
+    "colMethod": "Method",
+    "colPath": "Path",
+    "colDesc": "Returns",
+    "epComponents": "All catalog components (facts only).",
+    "epComponent": "One component by slug.",
+    "epCategories": "Category list with counts.",
+    "epOpenapi": "OpenAPI 3.1 specification.",
+    "exampleH": "Example",
+    "exampleNote": "Every response is JSON with permissive CORS, and is cacheable.",
+    "scopeH": "Scope & honesty",
+    "scope": "Read-only. Returns factual specifications entered from manufacturer datasheets, each with provenance and a last-checked date. No live pricing, stock, lead times, or purchase authorization. We never host datasheets \u2014 each component links to a manufacturer-listing search.",
+    "versionH": "Versioning",
+    "version": "The path is versioned (/api/v1). Breaking changes ship under a new version, and the static site stays available even if the API is paused.",
+    "comingH": "Coming next",
+    "coming": "A later release adds registered access and per-key rate limits for higher-volume use. The beta is open and read-only.",
+    "specBtn": "View OpenAPI spec"
   }
 }
