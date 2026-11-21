@@ -24,9 +24,10 @@ export default function Analytics() {
         {`window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 window.gtag = gtag;
-gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'granted'});
+gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied'});
 gtag('js', new Date());
-gtag('config','${GA_ID}',{send_page_view:true});`}
+gtag('config','${GA_ID}',{send_page_view:true});
+if(document.cookie.indexOf('sc_consent=granted')!==-1){gtag('consent','update',{analytics_storage:'granted'});}`}
       </Script>
     </>
   );

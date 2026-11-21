@@ -37,7 +37,7 @@ export default function Page({ params }: { params: { lang: string; "part-number"
         <Link href={`/${lang}/search`}>{c.components}</Link> / <Link href={`/${lang}/categories/${part.categorySlug}`}>{part.category[lang]}</Link>
       </div>
       <h1>{part.mpn}</h1>
-      <p className="detailsub">{part.manufacturer} · {part.category[lang]} · {part.package}</p>
+      <p className="detailsub">{part.manufacturerSlug ? <Link href={`/${lang}/manufacturers/${part.manufacturerSlug}`}>{part.manufacturer}</Link> : part.manufacturer} · {part.category[lang]} · {part.package}</p>
       <p className="detaildesc">{part.description[lang]}</p>
 
       <div className="spectable">
