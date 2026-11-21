@@ -212,5 +212,31 @@
     "purpose": "Purpose",
     "all": "All calculators",
     "verify": "Educational tool. Independently verify against the datasheet before relying on the result."
+  },
+  "component": {
+    "specifications": "Specifications",
+    "datasheet": "Datasheets & distributors",
+    "provenance": "Data provenance",
+    "lastChecked": "Last checked",
+    "category": "Category",
+    "package": "Package",
+    "manufacturer": "Manufacturer",
+    "altsH": "Cross-references & alternatives",
+    "noAlts": "No cross-references curated yet.",
+    "findOn": "Find datasheets & distributors on Octopart",
+    "noPricing": "Engineering facts only \u2014 no live pricing, stock, or supplier authorization is shown.",
+    "components": "Components"
+  },
+  "search": {
+    "title": "Component Search",
+    "intro": "Search the curated component catalog. Each result is an owned engineering record \u2014 specs entered from the manufacturer datasheet, with provenance.",
+    "placeholder": "Search MPN, manufacturer, or category",
+    "none": "No match. The catalog is curated and growing."
+  },
+  "category": {
+    "title": "Categories",
+    "intro": "Browse components by category.",
+    "inCategory": "Components in",
+    "all": "All categories"
   }
 }
