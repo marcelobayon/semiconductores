@@ -30,6 +30,7 @@ export type AnalyticsEvent =
   | "bom_analysis_started"
   | "bom_analysis_completed"
   | "sourcing_request_submitted"
+  | "contact_form_submit"
   | "supplier_inquiry_submitted"
   | "affiliate_outbound_click"
   | "course_outbound_click"
