@@ -1,0 +1,13 @@
+{
+  "title": "Herramientas y Calculadoras",
+  "intro": "Calculadoras de ingenieria validadas. Cada una muestra su formula, supuestos, un ejemplo resuelto y sus limitaciones.",
+  "inputs": "Entradas",
+  "result": "Resultado",
+  "formula": "Formula",
+  "assumptions": "Supuestos",
+  "worked": "Ejemplo resuelto",
+  "limitations": "Limitaciones",
+  "purpose": "Proposito",
+  "all": "Todas las calculadoras",
+  "verify": "Herramienta educativa. Verifica de forma independiente con la hoja de datos antes de confiar en el resultado."
+}

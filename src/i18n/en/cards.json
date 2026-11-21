@@ -1,0 +1,50 @@
+[
+  {
+    "route": "/marketplace",
+    "t": "Marketplace",
+    "d": "Search the component & supplier directory.",
+    "accent": ""
+  },
+  {
+    "route": "/manufacturers",
+    "t": "Manufacturers",
+    "d": "Foundries & manufacturer profiles.",
+    "accent": ""
+  },
+  {
+    "route": "/suppliers",
+    "t": "Suppliers",
+    "d": "Verified distributors & logistics.",
+    "accent": "amber"
+  },
+  {
+    "route": "/compare",
+    "t": "Compare",
+    "d": "Cross-reference parts & find alternatives.",
+    "accent": ""
+  },
+  {
+    "route": "/calculators",
+    "t": "Tools & Calculators",
+    "d": "Validated power, thermal & timing tools.",
+    "accent": ""
+  },
+  {
+    "route": "/education",
+    "t": "Education",
+    "d": "Curated courses, guides & glossary.",
+    "accent": ""
+  },
+  {
+    "route": "/research",
+    "t": "Research",
+    "d": "EUV defect research & the SECD track.",
+    "accent": ""
+  },
+  {
+    "route": "/api",
+    "t": "API / Developers",
+    "d": "Machine-readable data for AI agents.",
+    "accent": "amber"
+  }
+]

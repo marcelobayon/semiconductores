@@ -1,0 +1,14 @@
+{
+  "specifications": "Especificaciones",
+  "datasheet": "Hojas de datos y distribuidores",
+  "provenance": "Procedencia de los datos",
+  "lastChecked": "\u00daltima verificaci\u00f3n",
+  "category": "Categor\u00eda",
+  "package": "Encapsulado",
+  "manufacturer": "Fabricante",
+  "altsH": "Referencias cruzadas y alternativas",
+  "noAlts": "A\u00fan no hay referencias cruzadas curadas.",
+  "findOn": "Buscar hojas de datos y distribuidores en Octopart",
+  "noPricing": "Solo datos de ingenier\u00eda \u2014 no se muestra precio, stock ni autorizaci\u00f3n de proveedor en vivo.",
+  "components": "Componentes"
+}
