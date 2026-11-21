@@ -163,3 +163,24 @@ h1 u{color:var(--cyan);text-decoration:none}
 .stub h1{font-size:clamp(26px,5vw,40px);margin:10px 0 10px}
 .stub p{color:var(--muted);max-width:56ch;margin:0 0 22px}
 .stubtag{font-family:var(--mono);font-size:11px;color:var(--amber);border:1px solid rgba(255,184,0,.3);border-radius:20px;padding:4px 10px}
+
+/* inquiry forms */
+.formwrap{max-width:720px;margin:0 auto;padding:44px 20px 72px}
+.formwrap h1{font-size:clamp(26px,5vw,38px);margin:0 0 8px;letter-spacing:-.4px}
+.formintro{color:var(--muted);margin:0 0 22px;max-width:62ch}
+.warnbox{background:rgba(255,184,0,.07);border:1px solid rgba(255,184,0,.25);border-radius:10px;padding:11px 14px;font-size:13px;color:#e4cd94;margin:0 0 22px}
+.field{margin-bottom:16px;position:relative}
+.field label{display:block;font-size:13px;color:var(--ink);margin-bottom:6px;font-weight:550}
+.field .req{color:var(--amber);font-family:var(--mono);font-size:10px;margin-left:6px}
+.field input,.field select,.field textarea{width:100%;background:var(--panel2);border:1px solid var(--line);border-radius:10px;color:var(--ink);font-size:15px;font-family:var(--sans);padding:11px 13px;outline:0}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--cyan)}
+.field textarea{min-height:112px;resize:vertical}
+.hp{position:absolute;left:-9999px;top:0;height:0;overflow:hidden}
+.consent{display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--muted);margin:18px 0}
+.consent input{margin-top:3px;width:auto}
+.formbtn{background:var(--cyan);color:#04121a;border:0;border-radius:10px;font-weight:650;font-size:15px;padding:12px 22px;cursor:pointer}
+.formbtn:disabled{opacity:.55;cursor:default}
+.formerr{color:#ff9b9b;font-size:13px;margin-top:12px}
+.formok{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--lineC);border-radius:16px;padding:30px}
+.formok h2{margin:0 0 8px;font-size:22px;color:var(--cyan)}
+.formok p{color:var(--muted);margin:0}

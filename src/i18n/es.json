@@ -1,9 +1,203 @@
 {
-  "nav": { "marketplace": "Mercado", "components": "Componentes", "suppliers": "Proveedores", "tools": "Herramientas", "bom": "Analizador BOM", "education": "Educación", "research": "Investigación", "api": "API / Desarrolladores", "sourcing": "Solicitar abastecimiento" },
-  "common": { "demo": "DEMO", "searchPlaceholder": "Busca MPN, fabricante o categoría — prueba STM32F103", "go": "Buscar", "results": "resultados en el conjunto de demostración", "none": "Sin coincidencias en el conjunto de demostración. El índice real cubrirá muchos más MPN.", "prompt": "Escribe un número de parte, fabricante o categoría.", "human": "Humano", "json": "JSON", "cat": "Categoría", "pkg": "Encapsulado", "mfr": "Fabricante", "spec": "Especificaciones", "prov": "Datos ilustrativos para revisión de diseño. Los valores reales citarán su fuente y una marca de última verificación; los valores en conflicto se preservan, no se fusionan.", "trustH": "Etiquetas de confianza del proveedor:", "tlA": "Autorizado por el fabricante", "tlB": "Verificado independientemente", "tlC": "Provisto por el proveedor", "tlD": "Listado sin verificar", "full": "Especificaciones", "cmp": "Comparar", "alt": "Alternativas", "ds": "Hoja de datos", "navTo": "Ruta", "inDev": "En desarrollo", "inDevSub": "Esta sección es parte de la hoja de ruta aprobada. El enrutamiento y la navegación están activos; el contenido vendrá. Nada aquí es un catálogo real.", "backHome": "Volver al inicio" },
-  "home": { "kick": "COMERCIO E INTELIGENCIA DE COMPONENTES", "kick2": "EN · ES · LISTO PARA AGENTES", "h1a": "Encuentra, compara y abastece", "h1b": "cualquier componente.", "sub": "Un grafo para ingenieros y agentes de IA: números de parte, especificaciones, alternativas y proveedores verificados — con procedencia en cada valor.", "sa1": "Ver el piso automatizado", "sa2": "Construir con la API de agentes", "sa3": "Analizar una BOM", "t1": "Atribución de fuente en cada valor", "t2": "Marcas de última verificación", "t3": "Proveedores con etiqueta de confianza", "t4": "Sin stock ni precios inventados", "ptK": "EL PISO AUTOMATIZADO · 3D", "ptH": "Ve la cadena de suministro como una fábrica real.", "ptP": "Un piso logístico AMHS interactivo mapea cada nodo a una ruta real.", "ptCta": "Explorar en 3D", "fnH": "El embudo", "rcH": "Empieza por donde quieras" },
-  "funnel": [ { "n": "01", "t": "Descubrir", "d": "Buscar partes y proveedores" }, { "n": "02", "t": "Comparar", "d": "Referencias y alternativas" }, { "n": "03", "t": "Calcular", "d": "Herramientas validadas" }, { "n": "04", "t": "Enriquecer", "d": "Análisis de BOM y brechas" }, { "n": "05", "t": "Abastecer", "d": "RFQ y proveedores verificados" }, { "n": "06", "t": "Monitorear", "d": "Ciclo de vida y disponibilidad" } ],
-  "cards": [ { "route": "/marketplace", "t": "Mercado", "d": "Busca el directorio de componentes y proveedores.", "accent": "" }, { "route": "/manufacturers", "t": "Fabricantes", "d": "Fundiciones y perfiles de fabricantes.", "accent": "" }, { "route": "/suppliers", "t": "Proveedores", "d": "Distribuidores verificados y logística.", "accent": "amber" }, { "route": "/compare", "t": "Comparar", "d": "Referencias cruzadas y alternativas.", "accent": "" }, { "route": "/calculators", "t": "Herramientas", "d": "Potencia, térmica y temporización validadas.", "accent": "" }, { "route": "/education", "t": "Educación", "d": "Cursos, guías y glosario curados.", "accent": "" }, { "route": "/research", "t": "Investigación", "d": "Investigación de defectos EUV y SECD.", "accent": "" }, { "route": "/api", "t": "API / Desarrolladores", "d": "Datos legibles por máquina para agentes.", "accent": "amber" } ],
-  "footer": { "disc": "Datos de demostración para revisión de diseño. No se muestra inventario, precios, plazos ni autorización de proveedores reales. Los valores reales llevarán atribución de fuente y marcas de última verificación.", "affiliate": "Divulgación de afiliados", "privacy": "Privacidad", "terms": "Términos", "about": "Acerca de", "research": "Investigación" },
-  "platform": { "kick": "EL PISO AUTOMATIZADO · 3D", "h": "Cada nodo mapea a una ruta real", "p": "El piso interactivo está sobre un sitio que funciona sin él. Toca cualquier nodo, o usa las rutas abajo.", "back": "← Inicio", "note": "Escena de demostración · las rutas son base real" }
+  "nav": {
+    "marketplace": "Mercado",
+    "components": "Componentes",
+    "suppliers": "Proveedores",
+    "tools": "Herramientas",
+    "bom": "Analizador BOM",
+    "education": "Educaci\u00f3n",
+    "research": "Investigaci\u00f3n",
+    "api": "API / Desarrolladores",
+    "sourcing": "Solicitar abastecimiento"
+  },
+  "common": {
+    "demo": "DEMO",
+    "searchPlaceholder": "Busca MPN, fabricante o categor\u00eda \u2014 prueba STM32F103",
+    "go": "Buscar",
+    "results": "resultados en el conjunto de demostraci\u00f3n",
+    "none": "Sin coincidencias en el conjunto de demostraci\u00f3n. El \u00edndice real cubrir\u00e1 muchos m\u00e1s MPN.",
+    "prompt": "Escribe un n\u00famero de parte, fabricante o categor\u00eda.",
+    "human": "Humano",
+    "json": "JSON",
+    "cat": "Categor\u00eda",
+    "pkg": "Encapsulado",
+    "mfr": "Fabricante",
+    "spec": "Especificaciones",
+    "prov": "Datos ilustrativos para revisi\u00f3n de dise\u00f1o. Los valores reales citar\u00e1n su fuente y una marca de \u00faltima verificaci\u00f3n; los valores en conflicto se preservan, no se fusionan.",
+    "trustH": "Etiquetas de confianza del proveedor:",
+    "tlA": "Autorizado por el fabricante",
+    "tlB": "Verificado independientemente",
+    "tlC": "Provisto por el proveedor",
+    "tlD": "Listado sin verificar",
+    "full": "Especificaciones",
+    "cmp": "Comparar",
+    "alt": "Alternativas",
+    "ds": "Hoja de datos",
+    "navTo": "Ruta",
+    "inDev": "En desarrollo",
+    "inDevSub": "Esta secci\u00f3n es parte de la hoja de ruta aprobada. El enrutamiento y la navegaci\u00f3n est\u00e1n activos; el contenido vendr\u00e1. Nada aqu\u00ed es un cat\u00e1logo real.",
+    "backHome": "Volver al inicio"
+  },
+  "home": {
+    "kick": "COMERCIO E INTELIGENCIA DE COMPONENTES",
+    "kick2": "EN \u00b7 ES \u00b7 LISTO PARA AGENTES",
+    "h1a": "Encuentra, compara y abastece",
+    "h1b": "cualquier componente.",
+    "sub": "Un grafo para ingenieros y agentes de IA: n\u00fameros de parte, especificaciones, alternativas y proveedores verificados \u2014 con procedencia en cada valor.",
+    "sa1": "Ver el piso automatizado",
+    "sa2": "Construir con la API de agentes",
+    "sa3": "Analizar una BOM",
+    "t1": "Atribuci\u00f3n de fuente en cada valor",
+    "t2": "Marcas de \u00faltima verificaci\u00f3n",
+    "t3": "Proveedores con etiqueta de confianza",
+    "t4": "Sin stock ni precios inventados",
+    "ptK": "EL PISO AUTOMATIZADO \u00b7 3D",
+    "ptH": "Ve la cadena de suministro como una f\u00e1brica real.",
+    "ptP": "Un piso log\u00edstico AMHS interactivo mapea cada nodo a una ruta real.",
+    "ptCta": "Explorar en 3D",
+    "fnH": "El embudo",
+    "rcH": "Empieza por donde quieras"
+  },
+  "funnel": [
+    {
+      "n": "01",
+      "t": "Descubrir",
+      "d": "Buscar partes y proveedores"
+    },
+    {
+      "n": "02",
+      "t": "Comparar",
+      "d": "Referencias y alternativas"
+    },
+    {
+      "n": "03",
+      "t": "Calcular",
+      "d": "Herramientas validadas"
+    },
+    {
+      "n": "04",
+      "t": "Enriquecer",
+      "d": "An\u00e1lisis de BOM y brechas"
+    },
+    {
+      "n": "05",
+      "t": "Abastecer",
+      "d": "RFQ y proveedores verificados"
+    },
+    {
+      "n": "06",
+      "t": "Monitorear",
+      "d": "Ciclo de vida y disponibilidad"
+    }
+  ],
+  "cards": [
+    {
+      "route": "/marketplace",
+      "t": "Mercado",
+      "d": "Busca el directorio de componentes y proveedores.",
+      "accent": ""
+    },
+    {
+      "route": "/manufacturers",
+      "t": "Fabricantes",
+      "d": "Fundiciones y perfiles de fabricantes.",
+      "accent": ""
+    },
+    {
+      "route": "/suppliers",
+      "t": "Proveedores",
+      "d": "Distribuidores verificados y log\u00edstica.",
+      "accent": "amber"
+    },
+    {
+      "route": "/compare",
+      "t": "Comparar",
+      "d": "Referencias cruzadas y alternativas.",
+      "accent": ""
+    },
+    {
+      "route": "/calculators",
+      "t": "Herramientas",
+      "d": "Potencia, t\u00e9rmica y temporizaci\u00f3n validadas.",
+      "accent": ""
+    },
+    {
+      "route": "/education",
+      "t": "Educaci\u00f3n",
+      "d": "Cursos, gu\u00edas y glosario curados.",
+      "accent": ""
+    },
+    {
+      "route": "/research",
+      "t": "Investigaci\u00f3n",
+      "d": "Investigaci\u00f3n de defectos EUV y SECD.",
+      "accent": ""
+    },
+    {
+      "route": "/api",
+      "t": "API / Desarrolladores",
+      "d": "Datos legibles por m\u00e1quina para agentes.",
+      "accent": "amber"
+    }
+  ],
+  "footer": {
+    "disc": "Datos de demostraci\u00f3n para revisi\u00f3n de dise\u00f1o. No se muestra inventario, precios, plazos ni autorizaci\u00f3n de proveedores reales. Los valores reales llevar\u00e1n atribuci\u00f3n de fuente y marcas de \u00faltima verificaci\u00f3n.",
+    "affiliate": "Divulgaci\u00f3n de afiliados",
+    "privacy": "Privacidad",
+    "terms": "T\u00e9rminos",
+    "about": "Acerca de",
+    "research": "Investigaci\u00f3n"
+  },
+  "platform": {
+    "kick": "EL PISO AUTOMATIZADO \u00b7 3D",
+    "h": "Cada nodo mapea a una ruta real",
+    "p": "El piso interactivo est\u00e1 sobre un sitio que funciona sin \u00e9l. Toca cualquier nodo, o usa las rutas abajo.",
+    "back": "\u2190 Inicio",
+    "note": "Escena de demostraci\u00f3n \u00b7 las rutas son base real"
+  },
+  "forms": {
+    "submit": "Enviar",
+    "submitting": "Enviando\u2026",
+    "successTitle": "Recibido",
+    "successMsg": "Gracias \u2014 recibimos tu solicitud. Te contactaremos por correo.",
+    "errorMsg": "Algo sali\u00f3 mal. Int\u00e9ntalo de nuevo o escr\u00edbenos directamente.",
+    "consent": "He le\u00eddo el aviso de privacidad y acepto ser contactado sobre esta solicitud.",
+    "confidential": "No env\u00edes BOMs confidenciales, dise\u00f1os ni secretos comerciales por este formulario. Comparte solo lo necesario para iniciar una conversaci\u00f3n.",
+    "requiredNote": "Obligatorio",
+    "f_name": "Nombre",
+    "f_email": "Correo",
+    "f_company": "Empresa",
+    "f_organization": "Organizaci\u00f3n",
+    "f_role": "Cargo",
+    "f_website": "Sitio web",
+    "f_message": "Mensaje",
+    "f_quantity": "Cantidad estimada",
+    "f_region": "Regi\u00f3n de entrega",
+    "f_partNumbers": "N\u00fameros de parte o descripci\u00f3n",
+    "f_categories": "Categor\u00edas de componentes que manejas",
+    "f_inquiryType": "Soy\u2026",
+    "f_distributorType": "Tipo de distribuidor",
+    "sourcingTitle": "Solicitar abastecimiento",
+    "sourcingIntro": "Cu\u00e9ntanos qu\u00e9 necesitas abastecer. Dirigimos solicitudes calificadas a proveedores verificados \u2014 sin inventario, sin compromiso.",
+    "contactTitle": "Contacto",
+    "contactIntro": "Comun\u00edcate con el equipo. Elige lo que mejor te describe para dirigir tu mensaje al lugar correcto.",
+    "joinTitle": "\u00danete como proveedor",
+    "joinIntro": "Distribuidores y fabricantes: cu\u00e9ntanos qu\u00e9 ofrecen. Los listados llevan etiqueta de confianza; nunca implicamos autorizaci\u00f3n sin evidencia.",
+    "inquiryTypes": {
+      "industry": "Industria / cliente",
+      "supplier": "Proveedor / distribuidor",
+      "university": "Universidad / investigaci\u00f3n",
+      "government": "Gobierno / organismo de desarrollo",
+      "collaborator": "Colaborador t\u00e9cnico",
+      "investor": "Inversor / socio",
+      "general": "Consulta general"
+    },
+    "distributorTypes": {
+      "authorized": "Autorizado por el fabricante",
+      "independent": "Distribuidor independiente",
+      "manufacturer": "Fabricante",
+      "reseller": "Revendedor",
+      "other": "Otro"
+    }
+  }
 }
