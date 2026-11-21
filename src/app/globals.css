@@ -287,3 +287,22 @@ h1 u{color:var(--cyan);text-decoration:none}
 .apicode{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px;overflow-x:auto;font-family:var(--mono,monospace);font-size:13px;color:var(--ink);margin:6px 0}
 .apicode.apijson{font-size:12.5px;line-height:1.5;color:var(--muted)}
 .apibody{color:var(--muted);font-size:15px;max-width:72ch;line-height:1.65;margin:6px 0 0}
+
+/* research page */
+.csub{font-size:14px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin:6px 0 10px;font-weight:600}
+.rcard .rlink{display:inline-block;margin-top:10px;color:var(--cyan);font-size:13px}
+.lawcard{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--lineC);border-radius:16px;padding:18px 20px;max-width:760px}
+.lawcard h3{margin:0 0 6px;font-size:17px}
+.lawref{color:var(--faint);font-size:12.5px;margin:0 0 10px}
+.lawstatus{font-size:14px;color:var(--ink);margin:0 0 8px}
+.lawstatus .badge{margin-right:8px}
+.lawasof{color:var(--faint);font-size:12.5px}
+.lawnote{color:var(--muted);font-size:14px;margin:0 0 10px;max-width:68ch;line-height:1.6}
+.lawsrc{font-size:13px;color:var(--muted);margin:0}
+.lawsrc a{color:var(--cyan);text-decoration:none}
+.pillars{columns:2;column-gap:24px;margin:8px 0 0;padding-left:18px;max-width:640px}
+.pillars li{margin-bottom:8px;color:var(--ink);font-size:14.5px;break-inside:avoid}
+.disclaimer{margin-top:28px;padding:16px 18px;border:1px dashed var(--lineC);border-radius:12px;background:var(--panel)}
+.disclaimer b{font-size:14px}
+.disclaimer p{color:var(--muted);font-size:13.5px;margin:6px 0 0;max-width:80ch;line-height:1.6}
+@media(max-width:640px){.pillars{columns:1}}
