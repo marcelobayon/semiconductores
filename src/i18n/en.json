@@ -146,7 +146,24 @@
     "privacy": "Privacy",
     "terms": "Terms",
     "about": "About",
-    "research": "Research"
+    "research": "Research",
+    "colCatalog": "Catalog",
+    "colTools": "Tools",
+    "colLearn": "Learn",
+    "colInitiative": "Initiative",
+    "lSearch": "Component search",
+    "lCategories": "Categories",
+    "lManufacturers": "Manufacturers",
+    "lSuppliers": "Suppliers",
+    "lCalculators": "Calculators",
+    "lBom": "BOM Analyzer",
+    "lApi": "Developer API",
+    "lEducation": "Education",
+    "lGuides": "Guides",
+    "lGlossary": "Glossary",
+    "lResearch": "Research & ecosystem",
+    "lPlatform": "Platform",
+    "tagline": "Bilingual semiconductor commerce & intelligence."
   },
   "platform": {
     "kick": "THE AUTOMATED FLOOR \u00b7 3D",
@@ -359,5 +376,78 @@
     "ctaText": "If you are a university, lab, agency, or company exploring the regional semiconductor ecosystem, we would like to hear from you.",
     "ctaBtn": "Start a conversation",
     "visit": "Visit"
+  },
+  "manufacturers": {
+    "title": "Manufacturers",
+    "intro": "Component manufacturers represented in our catalog. Specifications come from each manufacturer's datasheet.",
+    "inCatalog": "In our catalog",
+    "part": "part",
+    "parts": "parts",
+    "backAll": "All manufacturers",
+    "profileNote": "Public information about the manufacturer. We are not affiliated with, or endorsed by, this company."
+  },
+  "suppliers": {
+    "title": "Sourcing & distribution",
+    "intro": "We help engineers and buyers source components, and we're building a regional network of suppliers and distributors. We show no supplier we don't actually work with.",
+    "buyersH": "Need to source components?",
+    "buyersText": "Send a bill of materials or a sourcing request and we'll help you find parts and route a quote.",
+    "buyersCta": "Request sourcing",
+    "suppliersH": "Are you a supplier or distributor?",
+    "suppliersText": "If you distribute authentic, traceable components in Latin America, we'd like to talk.",
+    "suppliersCta": "Become a partner",
+    "note": "We never display fabricated authorizations, counterfeit risk, or partners we haven't verified. Supplier listings will carry clear sourcing and verification details as the network grows."
+  },
+  "about": {
+    "title": "About the initiative",
+    "intro": "Semiconductores.net is a bilingual platform for semiconductor commerce and intelligence \u2014 and the public face of a longer-term, research-led initiative to help build semiconductor capabilities originating in Latin America.",
+    "whatH": "What this is",
+    "whatText": "A component catalog and search, engineering calculators, education, a free BOM analyzer, and a read-only API \u2014 plus a page that tracks the regional research ecosystem. Everything is bilingual (English and Spanish).",
+    "ambitionH": "The long-term ambition",
+    "ambitionText": "Beginning with Colombia and Peru, the initiative aims to develop capabilities across the value chain in stages \u2014 research, design, prototyping, testing, and selected manufacturing \u2014 anchored by proprietary computational research (SECD).",
+    "ambitionCta": "Research & ecosystem",
+    "isntH": "What this isn't",
+    "isntText": "This is not a factory, a chip for sale, or a claim of validated manufacturing. It is an early-stage, staged initiative. We don't publish partners, endorsements, or capabilities we don't have.",
+    "ctaH": "Want to get involved?",
+    "ctaText": "Research partners, suppliers, universities, and industry contacts are welcome.",
+    "ctaBtn": "Start a conversation"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "updated": "Last updated: November 2026",
+    "intro": "This is a general privacy policy for an early-stage site and is not legal advice. It describes how Semiconductores.net handles the limited information it collects.",
+    "sections": [
+      {
+        "h": "What we collect",
+        "p": "When you submit a form \u2014 contact, sourcing request, supplier application, or a course waitlist \u2014 we collect what you provide, typically your name, email, and your message or request. We do not ask for confidential designs, export-controlled data, or trade secrets through public forms."
+      },
+      {
+        "h": "Analytics",
+        "p": "We use Google Analytics 4 to understand aggregate usage. Analytics load only after you accept them in the consent banner, and we send only non-identifying events (such as page views and feature interactions) \u2014 never your form contents, email, or message text."
+      },
+      {
+        "h": "Cookies & consent",
+        "p": "Non-essential analytics storage stays denied until you consent. You can decline, and the site works without analytics."
+      },
+      {
+        "h": "Forms & where data goes",
+        "p": "Form submissions are processed through our hosting provider's form handling (Netlify Forms) so we can respond to you. We use your information only to reply and to provide the service you requested."
+      },
+      {
+        "h": "Affiliate links",
+        "p": "Some outbound links may be affiliate links (see our Affiliate Disclosure). Affiliate programs may set their own cookies when you click through; those are governed by the destination's policy, not ours."
+      },
+      {
+        "h": "Retention & your choices",
+        "p": "We keep form submissions only as long as needed to respond and maintain the relationship. To ask what we hold about you, or to request deletion, contact us through the site."
+      },
+      {
+        "h": "Changes",
+        "p": "We may update this policy as the platform grows. Material changes will appear here with a new date."
+      },
+      {
+        "h": "Contact",
+        "p": "For privacy questions, reach us through the contact or sourcing form on this site."
+      }
+    ]
   }
 }
