@@ -310,5 +310,27 @@
     "ctaTitle": "\u00bfNecesitas una cotizaci\u00f3n real?",
     "ctaText": "Env\u00eda tus requisitos a nuestro equipo de abastecimiento para una cotizaci\u00f3n. El analizador gratuito nunca env\u00eda tu BOM \u2014 t\u00fa eliges qu\u00e9 compartir.",
     "ctaBtn": "Solicitar abastecimiento"
+  },
+  "apiDocs": {
+    "title": "API para desarrolladores y agentes",
+    "intro": "Una API JSON de solo lectura y versionada sobre nuestro cat\u00e1logo de componentes. Hecha para ingenieros y agentes de IA: URLs estables, respuestas cacheables, sin clave durante la beta.",
+    "baseLabel": "URL base",
+    "endpointsH": "Endpoints",
+    "colMethod": "M\u00e9todo",
+    "colPath": "Ruta",
+    "colDesc": "Devuelve",
+    "epComponents": "Todos los componentes del cat\u00e1logo (solo datos).",
+    "epComponent": "Un componente por slug.",
+    "epCategories": "Lista de categor\u00edas con conteos.",
+    "epOpenapi": "Especificaci\u00f3n OpenAPI 3.1.",
+    "exampleH": "Ejemplo",
+    "exampleNote": "Cada respuesta es JSON con CORS permisivo y es cacheable.",
+    "scopeH": "Alcance y honestidad",
+    "scope": "Solo lectura. Devuelve especificaciones tomadas de hojas de datos del fabricante, cada una con procedencia y fecha de verificaci\u00f3n. Sin precios en vivo, existencias, tiempos de entrega ni autorizaci\u00f3n de compra. Nunca alojamos hojas de datos \u2014 cada componente enlaza a una b\u00fasqueda del listado del fabricante.",
+    "versionH": "Versionado",
+    "version": "La ruta est\u00e1 versionada (/api/v1). Los cambios incompatibles salen bajo una nueva versi\u00f3n, y el sitio est\u00e1tico sigue disponible aunque la API se pause.",
+    "comingH": "Pr\u00f3ximamente",
+    "coming": "Una versi\u00f3n posterior a\u00f1adir\u00e1 acceso registrado y l\u00edmites por clave para mayor volumen. La beta es abierta y de solo lectura.",
+    "specBtn": "Ver especificaci\u00f3n OpenAPI"
   }
 }
