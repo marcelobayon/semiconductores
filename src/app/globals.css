@@ -156,6 +156,17 @@ h1 u{color:var(--cyan);text-decoration:none}
 .scene-ctrl{position:absolute;top:14px;right:14px;display:flex;gap:8px}
 .scene-ctrl button{font-family:var(--mono);font-size:12px;color:var(--ink);background:rgba(14,20,34,.72);border:1px solid var(--lineC);border-radius:9px;padding:8px 11px;min-height:40px;cursor:pointer;backdrop-filter:blur(8px)}
 .scene-hint{position:absolute;right:14px;bottom:14px;font-family:var(--mono);font-size:10.5px;color:var(--faint);pointer-events:none}
+/* mobile: projected labels pile up and cover the diorama on narrow screens,
+   so hide the label text (keep the glowing nodes) and shorten the scene.
+   The route cards directly below carry the labels and navigation. */
+@media (max-width:680px){
+  .scene-host,.scene-loading{height:52vh;min-height:360px}
+  .spot .lab{display:none}
+  .spot{min-width:40px}
+  .spot .ring{width:38px;height:38px}
+  .scene-hud{display:none}
+  .scene-hint{right:10px;bottom:10px}
+}
 
 /* stub + 404 */
 .stubwrap{min-height:56vh;display:flex;align-items:center}
