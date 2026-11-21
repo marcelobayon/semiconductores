@@ -8,7 +8,8 @@
     "education": "Educaci\u00f3n",
     "research": "Investigaci\u00f3n",
     "api": "API / Desarrolladores",
-    "sourcing": "Solicitar abastecimiento"
+    "sourcing": "Solicitar abastecimiento",
+    "compare": "Comparar"
   },
   "common": {
     "demo": "DEMO",
@@ -92,8 +93,8 @@
   ],
   "cards": [
     {
-      "route": "/marketplace",
-      "t": "Mercado",
+      "route": "/search",
+      "t": "Catálogo de componentes",
       "d": "Busca el directorio de componentes y proveedores.",
       "accent": ""
     },
@@ -163,7 +164,8 @@
     "lGlossary": "Glosario",
     "lResearch": "Investigaci\u00f3n y ecosistema",
     "lPlatform": "Plataforma",
-    "tagline": "Comercio e inteligencia de semiconductores, biling\u00fce."
+    "tagline": "Comercio e inteligencia de semiconductores, biling\u00fce.",
+    "lCompare": "Comparar piezas"
   },
   "platform": {
     "kick": "EL PISO AUTOMATIZADO \u00b7 3D",
@@ -449,5 +451,60 @@
         "p": "Para preguntas de privacidad, escr\u00edbenos mediante el formulario de contacto o de abastecimiento de este sitio."
       }
     ]
+  },
+  "terms": {
+    "title": "T\u00e9rminos de Uso",
+    "updated": "\u00daltima actualizaci\u00f3n: noviembre de 2026",
+    "intro": "Estos son t\u00e9rminos generales para un sitio en etapa temprana y no constituyen asesor\u00eda legal. Al usar Semiconductores.net los aceptas.",
+    "sections": [
+      {
+        "h": "El servicio",
+        "p": "Semiconductores.net ofrece informaci\u00f3n de componentes, calculadoras de ingenier\u00eda, contenido educativo, un analizador de BOM y herramientas relacionadas. La plataforma es informativa y se ofrece \u201ctal cual\u201d mientras se desarrolla activamente."
+      },
+      {
+        "h": "Sin asesor\u00eda profesional",
+        "p": "Las calculadoras, especificaciones y dem\u00e1s datos son solo informativos y pueden contener errores. Verifica siempre los valores con la hoja de datos del fabricante. Nada aqu\u00ed sustituye el juicio profesional de ingenier\u00eda."
+      },
+      {
+        "h": "Exactitud y disponibilidad",
+        "p": "Los datos pueden estar incompletos o desactualizados, y podemos cambiar o eliminar funciones en cualquier momento. No mostramos precios en vivo, existencias, plazos de entrega ni autorizaci\u00f3n de proveedores, y nada en el sitio es una oferta de venta vinculante."
+      },
+      {
+        "h": "Propiedad intelectual",
+        "p": "El contenido y el dise\u00f1o del sitio nos pertenecen a nosotros o a nuestros licenciantes. Los nombres de fabricantes, marcas y n\u00fameros de parte son marcas de sus respectivos titulares y se usan solo para identificaci\u00f3n y referencia de compatibilidad; su uso no implica afiliaci\u00f3n ni respaldo."
+      },
+      {
+        "h": "Enlaces de terceros y afiliados",
+        "p": "El sitio enlaza a sitios de terceros, incluidos enlaces de afiliados (consulta nuestra Divulgaci\u00f3n de Afiliados). No somos responsables del contenido, las pol\u00edticas ni la disponibilidad de sitios externos."
+      },
+      {
+        "h": "Tus env\u00edos",
+        "p": "No env\u00edes dise\u00f1os confidenciales, datos t\u00e9cnicos controlados por exportaci\u00f3n ni secretos comerciales a trav\u00e9s de formularios p\u00fablicos. Eres responsable de la exactitud y legalidad de lo que env\u00edas."
+      },
+      {
+        "h": "Limitaci\u00f3n de responsabilidad",
+        "p": "En la m\u00e1xima medida permitida por la ley, el sitio se ofrece sin garant\u00edas de ning\u00fan tipo, y no somos responsables de los da\u00f1os que surjan de su uso o de confiar en su informaci\u00f3n."
+      },
+      {
+        "h": "Cambios",
+        "p": "Podemos actualizar estos t\u00e9rminos a medida que la plataforma y su estructura legal evolucionen. Los cambios importantes aparecer\u00e1n aqu\u00ed con una nueva fecha."
+      },
+      {
+        "h": "Contacto",
+        "p": "Las preguntas sobre estos t\u00e9rminos pueden enviarse mediante el formulario de contacto o de abastecimiento de este sitio."
+      }
+    ]
+  },
+  "compare": {
+    "title": "Comparar y referencias cruzadas",
+    "intro": "Pon componentes lado a lado para comparar especificaciones y encontrar alternativas. Agrega piezas del cat\u00e1logo.",
+    "addLabel": "Agregar un componente",
+    "choose": "Elige una pieza\u2026",
+    "max": "Hasta 4 a la vez.",
+    "prompt": "Agrega al menos dos componentes para comparar.",
+    "spec": "Especificaci\u00f3n",
+    "category": "Categor\u00eda",
+    "package": "Encapsulado",
+    "manufacturer": "Fabricante"
   }
 }

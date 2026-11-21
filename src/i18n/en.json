@@ -8,7 +8,8 @@
     "education": "Education",
     "research": "Research",
     "api": "API / Developers",
-    "sourcing": "Request sourcing"
+    "sourcing": "Request sourcing",
+    "compare": "Compare"
   },
   "common": {
     "demo": "DEMO",
@@ -92,8 +93,8 @@
   ],
   "cards": [
     {
-      "route": "/marketplace",
-      "t": "Marketplace",
+      "route": "/search",
+      "t": "Component catalog",
       "d": "Search the component & supplier directory.",
       "accent": ""
     },
@@ -163,7 +164,8 @@
     "lGlossary": "Glossary",
     "lResearch": "Research & ecosystem",
     "lPlatform": "Platform",
-    "tagline": "Bilingual semiconductor commerce & intelligence."
+    "tagline": "Bilingual semiconductor commerce & intelligence.",
+    "lCompare": "Compare parts"
   },
   "platform": {
     "kick": "THE AUTOMATED FLOOR \u00b7 3D",
@@ -449,5 +451,60 @@
         "p": "For privacy questions, reach us through the contact or sourcing form on this site."
       }
     ]
+  },
+  "terms": {
+    "title": "Terms of Use",
+    "updated": "Last updated: November 2026",
+    "intro": "These are general terms for an early-stage site and are not legal advice. By using Semiconductores.net you agree to them.",
+    "sections": [
+      {
+        "h": "The service",
+        "p": "Semiconductores.net provides component information, engineering calculators, educational content, a BOM analyzer, and related tools. The platform is informational and is offered on an \u201cas is\u201d basis while it is actively developed."
+      },
+      {
+        "h": "No professional advice",
+        "p": "Calculators, specifications, and other data are for information only and may contain errors. Always verify values against the manufacturer's datasheet. Nothing here is a substitute for professional engineering judgment."
+      },
+      {
+        "h": "Accuracy & availability",
+        "p": "Data may be incomplete or out of date, and we may change or remove features at any time. We do not show live pricing, stock, lead times, or supplier authorization, and nothing on the site is a binding offer to sell."
+      },
+      {
+        "h": "Intellectual property",
+        "p": "Site content and design belong to us or our licensors. Manufacturer names, brands, and part numbers are the trademarks of their respective owners and are used only for identification and compatibility reference; their use does not imply affiliation or endorsement."
+      },
+      {
+        "h": "Third-party & affiliate links",
+        "p": "The site links to third-party sites, including affiliate links (see our Affiliate Disclosure). We are not responsible for external sites' content, policies, or availability."
+      },
+      {
+        "h": "Your submissions",
+        "p": "Do not submit confidential designs, export-controlled technical data, or trade secrets through public forms. You are responsible for the accuracy and lawfulness of what you submit."
+      },
+      {
+        "h": "Limitation of liability",
+        "p": "To the maximum extent permitted by law, the site is provided without warranties of any kind, and we are not liable for damages arising from your use of it or reliance on its information."
+      },
+      {
+        "h": "Changes",
+        "p": "We may update these terms as the platform and its legal structure develop. Material changes will appear here with a new date."
+      },
+      {
+        "h": "Contact",
+        "p": "Questions about these terms can be sent through the contact or sourcing form on this site."
+      }
+    ]
+  },
+  "compare": {
+    "title": "Compare & cross-reference",
+    "intro": "Put components side by side to compare specifications and find alternatives. Add parts from the catalog below.",
+    "addLabel": "Add a component",
+    "choose": "Choose a part\u2026",
+    "max": "Up to 4 at a time.",
+    "prompt": "Add at least two components to compare.",
+    "spec": "Specification",
+    "category": "Category",
+    "package": "Package",
+    "manufacturer": "Manufacturer"
   }
 }

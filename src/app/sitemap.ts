@@ -9,7 +9,7 @@ import { courses } from "@/lib/courses";
 import { manufacturers } from "@/lib/manufacturers";
 
 const staticPaths = [
-  "", "/platform", "/search", "/categories", "/manufacturers", "/suppliers",
+  "", "/platform", "/search", "/compare", "/categories", "/manufacturers", "/suppliers",
   "/suppliers/join", "/sourcing/request", "/calculators", "/education", "/guides",
   "/glossary", "/research", "/research/secd", "/api", "/bom-analyzer",
   "/about", "/privacy", "/terms", "/affiliate-disclosure",

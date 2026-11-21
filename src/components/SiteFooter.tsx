@@ -6,7 +6,7 @@ export default function SiteFooter({ locale }: { locale: Locale }) {
   const f = getDictionary(locale).footer;
   const cols: { h: string; links: { r: string; l: string }[] }[] = [
     { h: f.colCatalog, links: [{ r: "/search", l: f.lSearch }, { r: "/categories", l: f.lCategories }, { r: "/manufacturers", l: f.lManufacturers }, { r: "/suppliers", l: f.lSuppliers }] },
-    { h: f.colTools, links: [{ r: "/calculators", l: f.lCalculators }, { r: "/bom-analyzer", l: f.lBom }, { r: "/api", l: f.lApi }] },
+    { h: f.colTools, links: [{ r: "/calculators", l: f.lCalculators }, { r: "/bom-analyzer", l: f.lBom }, { r: "/compare", l: f.lCompare }, { r: "/api", l: f.lApi }] },
     { h: f.colLearn, links: [{ r: "/education", l: f.lEducation }, { r: "/guides", l: f.lGuides }, { r: "/glossary", l: f.lGlossary }] },
     { h: f.colInitiative, links: [{ r: "/research", l: f.lResearch }, { r: "/platform", l: f.lPlatform }, { r: "/about", l: f.about }] },
   ];
