@@ -37,6 +37,7 @@ export type AnalyticsEvent =
   | "course_waitlist_submitted"
   | "guide_view"
   | "glossary_view"
+  | "category_view"
   | "language_switch"
   | "navigate"
   | "platform_view"

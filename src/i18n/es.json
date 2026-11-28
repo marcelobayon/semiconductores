@@ -44,7 +44,7 @@
     "kick2": "EN \u00b7 ES \u00b7 LISTO PARA AGENTES",
     "h1a": "Encuentra, compara y abastece",
     "h1b": "cualquier componente.",
-    "sub": "Un grafo para ingenieros y agentes de IA: n\u00fameros de parte, especificaciones, alternativas y proveedores verificados \u2014 con procedencia en cada valor.",
+    "sub": "Un grafo para ingenieros y agentes de IA: n\u00fameros de parte, especificaciones, alternativas y descubrimiento de proveedores \u2014 con procedencia en cada valor.",
     "sa1": "Ver el piso automatizado",
     "sa2": "Construir con la API de agentes",
     "sa3": "Analizar una BOM",
@@ -83,7 +83,7 @@
     {
       "n": "05",
       "t": "Abastecer",
-      "d": "RFQ y proveedores verificados"
+      "d": "RFQ y descubrimiento de proveedores"
     },
     {
       "n": "06",
@@ -94,7 +94,7 @@
   "cards": [
     {
       "route": "/search",
-      "t": "Catálogo de componentes",
+      "t": "Cat\u00e1logo de componentes",
       "d": "Busca el directorio de componentes y proveedores.",
       "accent": ""
     },
@@ -107,7 +107,7 @@
     {
       "route": "/suppliers",
       "t": "Proveedores",
-      "d": "Distribuidores verificados y log\u00edstica.",
+      "d": "Descubrimiento de distribuidores y log\u00edstica.",
       "accent": "amber"
     },
     {
@@ -197,7 +197,7 @@
     "f_inquiryType": "Soy\u2026",
     "f_distributorType": "Tipo de distribuidor",
     "sourcingTitle": "Solicitar abastecimiento",
-    "sourcingIntro": "Cu\u00e9ntanos qu\u00e9 necesitas abastecer. Dirigimos solicitudes calificadas a proveedores verificados \u2014 sin inventario, sin compromiso.",
+    "sourcingIntro": "Cu\u00e9ntanos qu\u00e9 necesitas abastecer. Dirigimos solicitudes calificadas a proveedores \u2014 sin inventario, sin compromiso.",
     "contactTitle": "Contacto",
     "contactIntro": "Comun\u00edcate con el equipo. Elige lo que mejor te describe para dirigir tu mensaje al lugar correcto.",
     "joinTitle": "\u00danete como proveedor",
@@ -291,7 +291,8 @@
     "backEducation": "Volver a Educaci\u00f3n",
     "whereToBuy": "D\u00f3nde comprar",
     "affNote": "Algunos enlaces salientes pueden ser de afiliados; podr\u00edamos ganar una comisi\u00f3n sin costo extra para ti.",
-    "affDisclosure": "Divulgaci\u00f3n de afiliados"
+    "affDisclosure": "Divulgaci\u00f3n de afiliados",
+    "seeAlso": "Ver tambi\u00e9n"
   },
   "affiliateDisclosure": {
     "title": "Divulgaci\u00f3n de Afiliados",
@@ -506,5 +507,28 @@
     "category": "Categor\u00eda",
     "package": "Encapsulado",
     "manufacturer": "Fabricante"
+  },
+  "hub": {
+    "home": "Inicio",
+    "categories": "Categor\u00edas",
+    "whatYouCanDo": "Qu\u00e9 puedes hacer aqu\u00ed:",
+    "doBrowse": "Explorar componentes",
+    "doCompare": "Comparar piezas",
+    "doCalc": "Calculadoras de ingenier\u00eda",
+    "doSource": "Solicitar abastecimiento",
+    "overviewH": "Resumen t\u00e9cnico",
+    "selectionH": "Criterios de selecci\u00f3n",
+    "paramCol": "Par\u00e1metro",
+    "whyCol": "Por qu\u00e9 importa",
+    "applicationsH": "Aplicaciones",
+    "componentsH": "Componentes",
+    "browseAll": "Ver todas las piezas de esta categor\u00eda",
+    "manufacturerLabel": "Fabricante",
+    "relatedH": "Gu\u00edas relacionadas",
+    "sourceH": "Abastecer una pieza",
+    "sourcesH": "Fuentes",
+    "lastReviewed": "\u00daltima revisi\u00f3n",
+    "published": "Publicado",
+    "viewComponent": "Ver"
   }
 }

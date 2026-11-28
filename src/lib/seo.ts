@@ -13,12 +13,21 @@ export function buildMetadata(opts: {
   path?: string;
   title: string;
   description: string;
+  /**
+   * Per-locale locale-less paths, for pages whose slug is localized (e.g. a
+   * category hub at /en/categories/operational-amplifiers and
+   * /es/categories/amplificadores-operacionales). When provided, canonical and
+   * every hreflang alternate use the correct per-locale path. Omit for
+   * shared-slug pages (the common case).
+   */
+  localizedPaths?: Partial<Record<Locale, string>>;
 }): Metadata {
-  const path = opts.path && opts.path !== "/" ? opts.path : "";
-  const canonical = `${siteUrl}/${opts.locale}${path}`;
+  const norm = (p?: string) => (p && p !== "/" ? p : "");
+  const pathFor = (l: Locale) => norm(opts.localizedPaths?.[l] ?? opts.path);
+  const canonical = `${siteUrl}/${opts.locale}${pathFor(opts.locale)}`;
   const languages: Record<string, string> = {};
-  for (const l of locales) languages[l] = `${siteUrl}/${l}${path}`;
-  languages["x-default"] = `${siteUrl}/en${path}`;
+  for (const l of locales) languages[l] = `${siteUrl}/${l}${pathFor(l)}`;
+  languages["x-default"] = `${siteUrl}/en${pathFor("en")}`;
 
   // Locale-specific social preview: Spanish pages get the Spanish OG image.
   // Read per-URL by the scraper, so sharing /es adds no friction.
@@ -44,5 +53,22 @@ export function buildMetadata(opts: {
       description: opts.description,
       images: [ogImage],
     },
+  };
+}
+
+/**
+ * BreadcrumbList JSON-LD matching the page's actual navigation hierarchy.
+ * `items` are {name, path} where path is a locale-less path ("" for home).
+ */
+export function breadcrumbJsonLd(locale: Locale, items: { name: string; path: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((it, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: it.name,
+      item: `${siteUrl}/${locale}${it.path && it.path !== "/" ? it.path : ""}`,
+    })),
   };
 }
