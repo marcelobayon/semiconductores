@@ -44,7 +44,7 @@
     "kick2": "EN \u00b7 ES \u00b7 AGENT-READY",
     "h1a": "Find, compare, and source",
     "h1b": "any component.",
-    "sub": "One graph for engineers and AI agents: manufacturer part numbers, specs, alternatives, and verified suppliers \u2014 with provenance on every value.",
+    "sub": "One graph for engineers and AI agents: manufacturer part numbers, specs, alternatives, and supplier discovery \u2014 with provenance on every value.",
     "sa1": "See the automated floor",
     "sa2": "Build with the agent API",
     "sa3": "Analyze a BOM",
@@ -83,7 +83,7 @@
     {
       "n": "05",
       "t": "Source",
-      "d": "RFQs & verified suppliers"
+      "d": "RFQs & supplier discovery"
     },
     {
       "n": "06",
@@ -107,7 +107,7 @@
     {
       "route": "/suppliers",
       "t": "Suppliers",
-      "d": "Verified distributors & logistics.",
+      "d": "Distributor discovery & logistics.",
       "accent": "amber"
     },
     {
@@ -197,7 +197,7 @@
     "f_inquiryType": "I am a\u2026",
     "f_distributorType": "Distributor type",
     "sourcingTitle": "Request sourcing",
-    "sourcingIntro": "Tell us what you need to source. We route qualified requests to verified suppliers \u2014 no inventory, no obligation.",
+    "sourcingIntro": "Tell us what you need to source. We route qualified requests to suppliers \u2014 no inventory, no obligation.",
     "contactTitle": "Contact",
     "contactIntro": "Reach the team. Pick what best describes you so we route your message to the right place.",
     "joinTitle": "Join as a supplier",
@@ -291,7 +291,8 @@
     "backEducation": "Back to Education",
     "whereToBuy": "Where to buy",
     "affNote": "Some outbound links may be affiliate links; we may earn a commission at no extra cost to you.",
-    "affDisclosure": "Affiliate disclosure"
+    "affDisclosure": "Affiliate disclosure",
+    "seeAlso": "See also"
   },
   "affiliateDisclosure": {
     "title": "Affiliate Disclosure",
@@ -506,5 +507,28 @@
     "category": "Category",
     "package": "Package",
     "manufacturer": "Manufacturer"
+  },
+  "hub": {
+    "home": "Home",
+    "categories": "Categories",
+    "whatYouCanDo": "What you can do here:",
+    "doBrowse": "Browse components",
+    "doCompare": "Compare parts",
+    "doCalc": "Engineering calculators",
+    "doSource": "Request sourcing",
+    "overviewH": "Technical overview",
+    "selectionH": "Selection criteria",
+    "paramCol": "Parameter",
+    "whyCol": "Why it matters",
+    "applicationsH": "Applications",
+    "componentsH": "Components",
+    "browseAll": "Browse all parts in this category",
+    "manufacturerLabel": "Manufacturer",
+    "relatedH": "Related guides",
+    "sourceH": "Source a part",
+    "sourcesH": "Sources",
+    "lastReviewed": "Last reviewed",
+    "published": "Published",
+    "viewComponent": "View"
   }
 }

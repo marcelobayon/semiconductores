@@ -3,8 +3,19 @@ type L = Record<Locale, string>;
 export interface GuideSection { heading: L; body: L; }
 export interface Source { label: string; url: string; }
 export interface Guide {
-  slug: string; title: L; summary: L; sections: GuideSection[];
+  slug: string;
+  /** Optional localized Spanish slug. When set, /es/guides/<esSlug> is the Spanish URL. */
+  esSlug?: string;
+  title: L; summary: L; sections: GuideSection[];
   editor: string; published: string; updated: string; sources: Source[]; limitations: L;
+  /** Optional discovery links rendered at the foot of the guide. */
+  relatedComponents?: string[]; // catalog slugs
+  relatedHubKey?: string; // category-hub key
+}
+
+/** The Spanish slug if present, else the shared slug. */
+export function guideSlug(g: Guide, locale: Locale): string {
+  return locale === "es" && g.esSlug ? g.esSlug : g.slug;
 }
 const EDITOR = "Semiconductores.net editorial team";
 const PUB = "2026-11-21";
@@ -52,5 +63,35 @@ export const guides: Guide[] = [
     sources: [{ label: "Industry overview compiled by the editorial team", url: "https://semiconductores.net" }],
     limitations: { en: "A simplified model. Real supply chains have many more specialized steps and participants.", es: "Un modelo simplificado. Las cadenas reales tienen muchos más pasos y participantes especializados." },
   },
+  {
+    slug: "what-is-an-operational-amplifier",
+    esSlug: "que-es-un-amplificador-operacional",
+    title: { en: "What Is an Operational Amplifier?", es: "¿Qué Es un Amplificador Operacional?" },
+    summary: { en: "A practical introduction to the op-amp: what it does, its two inputs and output, the three core configurations with gain equations, and how to choose one.", es: "Una introducción práctica al op-amp: qué hace, sus dos entradas y la salida, las tres configuraciones básicas con sus ecuaciones de ganancia y cómo elegir uno." },
+    sections: [
+      { heading: { en: "What an operational amplifier is", es: "Qué es un amplificador operacional" }, body: { en: "An operational amplifier (op-amp) is a compact integrated circuit that amplifies the voltage difference between its two inputs by a very large factor — the open-loop gain, often 100,000 or more. That raw gain is rarely used directly; instead, external feedback tames it into precise, repeatable behavior. The op-amp is the workhorse of analog design because a handful of external parts turn one device into an amplifier, buffer, or active filter.", es: "Un amplificador operacional (op-amp) es un circuito integrado compacto que amplifica la diferencia de voltaje entre sus dos entradas por un factor muy grande — la ganancia en lazo abierto, a menudo de 100 000 o más. Esa ganancia bruta casi nunca se usa de forma directa; en su lugar, la realimentación externa la convierte en un comportamiento preciso y repetible. El op-amp es el caballo de batalla del diseño analógico porque unas pocas piezas externas convierten un mismo dispositivo en amplificador, buffer o filtro activo." } },
+      { heading: { en: "The two inputs and the output", es: "Las dos entradas y la salida" }, body: { en: "Every op-amp has an inverting input (−), a non-inverting input (+), and one output. With negative feedback connecting the output back to the inverting input, the device drives its output so that the two inputs sit at (very nearly) the same voltage. Two rules follow and let you analyze most circuits by inspection: the inputs tend toward equal voltage, and the inputs draw negligible current.", es: "Todo op-amp tiene una entrada inversora (−), una no inversora (+) y una salida. Con realimentación negativa que conecta la salida de vuelta a la entrada inversora, el dispositivo ajusta su salida para que ambas entradas queden (casi exactamente) al mismo voltaje. De ahí surgen dos reglas que permiten analizar la mayoría de los circuitos por inspección: las entradas tienden a igualar su voltaje y toman una corriente despreciable." } },
+      { heading: { en: "Ideal versus practical", es: "Ideal frente a práctico" }, body: { en: "The ideal model — infinite gain and bandwidth, infinite input impedance, zero output impedance, zero offset — keeps the math simple and is accurate enough for first-order design. Real devices depart from it: finite gain-bandwidth, a slew-rate limit, a small input offset voltage, input bias current, noise, and an output that cannot quite reach the supply rails. Good design keeps those departures small relative to the signal.", es: "El modelo ideal — ganancia y ancho de banda infinitos, impedancia de entrada infinita, impedancia de salida cero, offset cero — mantiene las cuentas simples y es suficientemente preciso para un diseño de primer orden. Los dispositivos reales se apartan de él: producto ganancia-ancho de banda finito, un límite de slew rate, un pequeño voltaje de offset de entrada, corriente de polarización, ruido y una salida que no llega del todo a los rieles de alimentación. Un buen diseño mantiene esas desviaciones pequeñas frente a la señal." } },
+      { heading: { en: "Non-inverting amplifier", es: "Amplificador no inversor" }, body: { en: "Feed the signal into the + input and connect a divider: Rf from the output to the − input, and Rg from the − input to ground. The closed-loop gain is 1 + Rf/Rg, always at least 1, with a very high input impedance. For example, Rf = 90 kΩ and Rg = 10 kΩ give a gain of 10.", es: "Aplica la señal a la entrada + y conecta un divisor: Rf de la salida a la entrada − y Rg de la entrada − a tierra. La ganancia en lazo cerrado es 1 + Rf/Rg, siempre de al menos 1, con una impedancia de entrada muy alta. Por ejemplo, Rf = 90 kΩ y Rg = 10 kΩ dan una ganancia de 10." } },
+      { heading: { en: "Inverting amplifier", es: "Amplificador inversor" }, body: { en: "Feed the signal through Rin into the − input, place Rf from output to −, and ground the + input. The − input becomes a virtual ground and the gain is −Rf/Rin; the minus sign means the output is inverted. The input impedance equals Rin. For example, Rf = 100 kΩ and Rin = 10 kΩ give a gain of −10.", es: "Aplica la señal a través de Rin a la entrada −, coloca Rf de la salida a − y conecta la entrada + a tierra. La entrada − se convierte en una tierra virtual y la ganancia es −Rf/Rin; el signo menos indica que la salida se invierte. La impedancia de entrada es igual a Rin. Por ejemplo, Rf = 100 kΩ y Rin = 10 kΩ dan una ganancia de −10." } },
+      { heading: { en: "Voltage follower (buffer)", es: "Seguidor de voltaje (buffer)" }, body: { en: "Tie the output directly to the − input and drive the + input. The gain is exactly 1, but the circuit presents a very high input impedance and a low output impedance. That makes it ideal for isolating a weak, high-impedance source — such as a sensor — from a load that would otherwise pull its voltage down.", es: "Conecta la salida directamente a la entrada − y excita la entrada +. La ganancia es exactamente 1, pero el circuito presenta una impedancia de entrada muy alta y una de salida baja. Eso lo hace ideal para aislar una fuente débil y de alta impedancia — como un sensor — de una carga que, de otro modo, haría caer su voltaje." } },
+      { heading: { en: "Common applications", es: "Aplicaciones comunes" }, body: { en: "Op-amps appear in signal conditioning, active filters, sensor front-ends (bridges, photodiodes), audio preamplifiers, instrumentation and difference amplifiers, and analog math such as summing and integration. One device family covers a wide range because feedback — not the chip alone — defines the function.", es: "Los op-amp aparecen en acondicionamiento de señal, filtros activos, etapas de entrada de sensores (puentes, fotodiodos), preamplificadores de audio, instrumentación y amplificadores de diferencia, y operaciones analógicas como suma e integración. Una misma familia de dispositivos cubre un amplio rango porque la realimentación — y no solo el chip — define la función." } },
+      { heading: { en: "Selecting an op-amp", es: "Cómo elegir un op-amp" }, body: { en: "Match the device to the job. For precision DC, prioritize low input offset voltage and low bias current. For audio and higher frequencies, prioritize gain-bandwidth product, slew rate, and low noise. For low-voltage or battery designs, check supply range, rail-to-rail inputs and outputs, and quiescent current. The operational-amplifier category hub lists each parameter and why it matters.", es: "Ajusta el dispositivo a la tarea. Para precisión en DC, prioriza un bajo voltaje de offset y una baja corriente de polarización. Para audio y frecuencias altas, prioriza el producto ganancia-ancho de banda, el slew rate y un bajo ruido. Para diseños de bajo voltaje o con batería, revisa el rango de alimentación, las entradas y salidas rail-to-rail y la corriente en reposo. El centro de categoría de amplificadores operacionales enumera cada parámetro y por qué importa." } },
+      { heading: { en: "Common mistakes", es: "Errores comunes" }, body: { en: "Typical pitfalls: expecting full bandwidth at high gain (bandwidth falls as gain-bandwidth ÷ gain); ignoring slew-rate limits on large, fast signals; driving a capacitive load without compensation, which can oscillate; assuming rail-to-rail means the output reaches the rails under load (it gets close, not exact); and forgetting that input bias current creates offsets across a high source impedance. An op-amp is also not a comparator — using one open-loop for comparison invites slow, unreliable switching.", es: "Errores típicos: esperar todo el ancho de banda con ganancia alta (el ancho de banda cae como ganancia-ancho de banda ÷ ganancia); ignorar los límites de slew rate con señales grandes y rápidas; excitar una carga capacitiva sin compensación, lo que puede oscilar; suponer que rail-to-rail significa que la salida llega a los rieles bajo carga (se acerca, no es exacto); y olvidar que la corriente de polarización crea offsets sobre una impedancia de fuente alta. Un op-amp tampoco es un comparador — usarlo en lazo abierto para comparar provoca una conmutación lenta y poco fiable." } }
+    ],
+    editor: EDITOR, published: "2026-11-28", updated: "2026-11-28",
+    sources: [
+      { label: "Op Amps for Everyone (SLOD006) — Texas Instruments", url: "https://www.ti.com/lit/pdf/slod006" },
+      { label: "Analog Engineer's Circuit Cookbook: Op Amps (SLYY137) — Texas Instruments", url: "https://www.ti.com/lit/pdf/slyy137" },
+      { label: "Op Amp Applications Handbook (Walt Jung, ed.) — Analog Devices", url: "https://www.analog.com/en/resources/technical-books/op-amp-applications-handbook.html" },
+      { label: "LM358 datasheet — Texas Instruments", url: "https://www.ti.com/lit/ds/symlink/lm358.pdf" },
+      { label: "The Art of Electronics, 3rd ed., Ch. 4 — Horowitz & Hill", url: "https://artofelectronics.net/" }
+    ],
+    limitations: { en: "An introductory guide. Exact gains, bandwidths, and limits depend on the specific device — always design against its datasheet at your operating conditions.", es: "Una guía introductoria. Las ganancias, anchos de banda y límites exactos dependen del dispositivo específico — diseña siempre con su hoja de datos en tus condiciones de operación." },
+    relatedComponents: ["lm358p"],
+    relatedHubKey: "operational-amplifiers",
+  },
 ];
-export function getGuide(slug: string): Guide | undefined { return guides.find((g) => g.slug === slug); }
+export function getGuide(slug: string): Guide | undefined {
+  return guides.find((g) => g.slug === slug || g.esSlug === slug);
+}

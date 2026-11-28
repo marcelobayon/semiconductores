@@ -356,3 +356,25 @@ h1 u{color:var(--cyan);text-decoration:none}
 .cmp-table tr:last-child td{border-bottom:none}
 .cmp-x{position:absolute;top:6px;right:8px;background:none;border:0;color:var(--faint);font-size:16px;line-height:1;cursor:pointer}
 .cmp-x:hover{color:var(--ink)}
+
+/* category hub (SEO) */
+.hubwrap{max-width:880px}
+.hublede{max-width:74ch}
+.hubdo{font-size:13.5px;color:var(--muted);margin:8px 0 2px}
+.hubdo a{color:var(--cyan);text-decoration:none}
+.hubdo a:hover{text-decoration:underline}
+.hubh{margin-top:30px}
+.hubsec{margin-bottom:12px}
+.hubnote{font-size:13px;color:var(--muted);max-width:76ch;line-height:1.6;margin:8px 0 0}
+.hubpart{display:flex;align-items:center;gap:10px}
+.hubpart .hubview{margin-left:auto;color:var(--cyan);text-decoration:none;font-size:13px;white-space:nowrap}
+.hubpart .meta a{color:var(--muted);text-decoration:none}
+.hubpart .meta a:hover{color:var(--cyan)}
+.srclist{margin:8px 0 10px;padding-left:18px}
+.srclist li{font-size:13px;color:var(--muted);margin-bottom:6px;line-height:1.5}
+.srclist a{color:var(--cyan);text-decoration:none}
+.srctype{color:var(--faint)}
+.srcdate{font-size:12px;color:var(--faint)}
+.seealso{margin:18px 0;font-size:14px;color:var(--muted)}
+.seealso a{color:var(--cyan);text-decoration:none}
+.seealso a:hover{text-decoration:underline}
